@@ -1,0 +1,68 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 2.5rem;
+  $color-red: #e6002d;
+  $color-dark-blue: #001a58;
+  $color-disabled: #999999;
+  $size-big: 4.5rem;
+  $size-normal: 3.5rem;
+  $size-small: 2.5rem;
+  $background-color: transparent;
+  &.disabled {
+    &::before {
+      background-color: $color-disabled;
+    }
+    touch-action: none;
+  }
+  &.btn-red {
+    &::before {
+      background-color: $color-red;
+    }
+  }
+  &.btn-dark-blue {
+    &::before {
+      background-color: $color-dark-blue;
+    }
+  }
+  &.btn-size-big {
+    height: $size-big;
+    font-size: 1.25rem;
+    &::before {
+      width: calc(100% - (#{$size-big} * #{$skew-deg-16}));
+    }
+  }
+  &.btn-size-normal {
+    height: $size-normal;
+    font-size: 1rem;
+    &::before {
+      width: calc(100% - (#{$size-normal} * #{$skew-deg-16}));
+    }
+  }
+  &.btn-size-small {
+    height: $size-small;
+    font-size: 0.875rem;
+    &::before {
+      width: calc(100% - (#{$size-small} * #{$skew-deg-16}));
+    }
+  }
+  &.bg-skew {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      display: block;
+      height: 100%;
+      content: '';
+      transform: skewX(-16deg) translateX(-50%);
+      transform-origin: center;
+    }
+  }
+  &.btn-action {
+    color: #ffffff;
+    font-weight: 500;
+  }
+}

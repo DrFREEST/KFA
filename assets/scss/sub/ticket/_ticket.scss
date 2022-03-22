@@ -1,0 +1,397 @@
+&.ticket,
+&.calendar {
+  max-width: 82.5rem;
+  &::before {
+    position: fixed;
+    z-index: -1;
+    top: 21rem;
+    left: 0;
+    display: block;
+    width: 12.0625rem;
+    height: 10.9375rem;
+    content: '';
+    background: {
+      position: left center;
+      image: url(../images/sub-pattern-01.svg);
+      repeat: no-repeat;
+      size: contain;
+    }
+  }
+  &.calendar {
+    padding: {
+      top: 5.25rem;
+      bottom: 5.25rem;
+    }
+    &::before {
+      display: none;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .calendar-body {
+      margin-top: 2.8125rem;
+      .calendar-top {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        .sel-month {
+          display: flex;
+          align-items: center;
+          flex: 0 0 auto;
+          h3 {
+            margin: 0 0.5rem;
+            font-size: 32px;
+            font-weight: 500;
+          }
+          button {
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0;
+            i {
+              display: block;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+          .icon-24-arr-prev {
+            background: {
+              image: url(../images/icon/ic-24-arr-prev.svg);
+            }
+          }
+          .icon-24-arr-next {
+            background: {
+              image: url(../images/icon/ic-24-arr-next.svg);
+            }
+          }
+        }
+        .sel-type {
+          position: relative;
+          overflow: hidden;
+          height: 2.5rem;
+          flex: 0 0 13.125rem;
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            content: '';
+            background: {
+              position: center;
+              image: url(../images/icon/ic-24-arr-down.svg);
+              repeat: no-repeat;
+            }
+          }
+          &:hover,
+          &.expanded {
+            overflow: visible;
+            &::after {
+              background: {
+                image: url(../images/icon/ic-24-arr-up.svg);
+              }
+            }
+          }
+          ul {
+            background-color: #f6f6f6;
+          }
+          li {
+            display: flex;
+            height: 2.5rem;
+            padding: 0 1rem;
+            align-items: center;
+            label {
+              font-size: 0.875rem;
+              flex: 1 1 100%;
+              input[type='checkbox'] {
+                & + span {
+                  color: #666666;
+                }
+                &:checked + span {
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+      .calendar-header {
+        display: flex;
+        height: 2rem;
+        align-items: stretch;
+        margin: {
+          right: -0.75rem;
+          bottom: 1rem;
+          left: -0.75rem;
+        }
+        .day {
+          display: flex;
+          max-width: calc(100% / 7 - 1.5rem);
+          height: 2rem;
+          color: #666666;
+          font-size: 0.875rem;
+          align-items: center;
+          flex: 1 1 calc(100% / 7 - 1.5rem);
+          @media (max-width: 1024px) {
+            height: 1.5rem;
+            font-size: 0.75rem;
+          }
+          margin: {
+            right: 0.75rem;
+            left: 0.75rem;
+          }
+        }
+      }
+      .calendar-content {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: {
+          right: -0.75rem;
+          left: -0.75rem;
+        }
+        @media (max-width: 1024px) {
+          margin: {
+            right: -0.15625rem;
+            left: -0.15625rem;
+          }
+        }
+        .day {
+          max-width: calc(100% / 7 - 1.5rem);
+          min-height: 10.9375rem;
+          border-top: 1px solid #000000;
+          flex: 1 1 calc(100% / 7 - 1.5rem);
+          @media (max-width: 1024px) {
+            flex: 1 1 calc(100% / 7 - 0.3125rem);
+            max-width: calc(100% / 7 - 0.3125rem);
+            min-height: 10.3125rem;
+            padding: {
+              top: 0.25rem;
+              bottom: 0.25rem;
+            }
+            margin: {
+              right: 0.15625rem;
+              bottom: 1rem;
+              left: 0.15625rem;
+            }
+          }
+          padding: {
+            top: 0.5rem;
+            bottom: 0.5rem;
+          }
+          margin: {
+            right: 0.75rem;
+            bottom: 1.5rem;
+            left: 0.75rem;
+          }
+          &.other-month {
+            color: #d8d8d8;
+            * {
+              color: #d8d8d8;
+            }
+          }
+          .date {
+            display: flex;
+            height: 2rem;
+            font-size: 1.5rem;
+            align-items: center;
+            @media (max-width: 1024px) {
+              height: 1.5rem;
+              font-size: 1rem;
+            }
+            &.week-end {
+              color: #ff0000;
+            }
+            .btn-play {
+              margin-left: auto;
+              padding: 0;
+              @media (max-width: 1024px) {
+                display: none;
+              }
+            }
+          }
+          .schedule-list {
+            margin-top: 0.75rem;
+            @media (max-width: 1024px) {
+              margin-top: 0.25rem;
+            }
+          }
+          dl {
+            position: relative;
+            display: flex;
+            height: 1.25rem;
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+            align-items: flex-start;
+            & ~ dl {
+              margin-top: 0.25rem;
+            }
+            &.schedule-type-1 {
+              dt {
+                color: #389cca;
+                &::before {
+                  background-color: #389cca;
+                }
+              }
+            }
+            &.schedule-type-2 {
+              dt {
+                color: #1a48b7;
+                &::before {
+                  background-color: #1a48b7;
+                }
+              }
+            }
+            &.schedule-type-3 {
+              dt {
+                color: #ed7354;
+                &::before {
+                  background-color: #ed7354;
+                }
+              }
+            }
+            &.schedule-type-4 {
+              dt {
+                color: #0dad49;
+                &::before {
+                  background-color: #0dad49;
+                }
+              }
+            }
+            &.schedule-type-5 {
+              dt {
+                color: #e2a64b;
+                &::before {
+                  background-color: #e2a64b;
+                }
+              }
+            }
+            dt {
+              display: flex;
+              height: 1.25rem;
+              font-size: 0.75rem;
+              font-weight: 500;
+              align-items: center;
+              flex: 0 0 3.25rem;
+              @media (max-width: 1024px) {
+                flex: 0 0 auto;
+                span {
+                  // display: none;
+                }
+              }
+              &::before {
+                display: block;
+                width: 0.375rem;
+                height: 0.375rem;
+                margin-right: 0.25rem;
+                content: '';
+                border-radius: 50%;
+                flex: 0 0 auto;
+              }
+            }
+            dd {
+              display: block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              @media (max-width: 1024px) {
+                span {
+                  // display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ticket-top {
+    .top-visual {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 30rem;
+      padding: 3.5rem;
+      color: #ffffff;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: {
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+      }
+      .visual-title {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: calc(71 / 48);
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+      .btn-share {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 3.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0;
+        .icon-24-nega-share {
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+          background: {
+            image: url(../images/icon/ic-24-nega-share.svg);
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .stadium-map {
+    img {
+      display: block;
+      max-width: 100%;
+      \margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  &.ticket,
+  &.calendar {
+    padding-top: 0;
+    &::before {
+      display: none;
+    }
+    .ticket-top {
+      margin: {
+        right: -1rem;
+        left: -1rem;
+      }
+      .top-visual {
+        height: 16rem;
+        padding: 1rem;
+        .visual-title {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .btn-share {
+          bottom: 1rem;
+          left: 1rem;
+        }
+      }
+    }
+    .tab-content {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}

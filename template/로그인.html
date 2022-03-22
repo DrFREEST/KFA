@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <!-- css load -->
+  <link href="../assets/css/kfa_style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header">
+      <div class="header-top">
+        <div class="util">
+          <div class="greeting">
+            <strong>손흥민님</strong>환영합니다!
+          </div>
+          <ul>
+            <li><a href title="회원가입">회원가입</a></li>
+            <li><a href title="로그인">로그인</a></li>
+            <li><a href title="고객센터">고객센터</a></li>
+            <li><a href title="판매자센터">판매자센터</a></li>
+          </ul>
+          <div class="actions">
+            <div class="change-language">
+              <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+              <ul>
+                <li><a href title="KOR">KOR</a></li>
+                <li><a href title="ENG">ENG</a></li>
+              </ul>
+            </div>
+            <a class="btn-sitemap" href title="사이트맵"><i class="ic-24-sitemap"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <h1 class="logo-header"><a href title="KFA PLAY 홈"><img src="../assets/images/logo-web.svg" alt="KFA PLAY"></a></h1>
+        <div class="gnb">
+          <ul class="depth1">
+            <li><a class="font-point" href title="Ticket">Ticket</a>
+              <ul class="depth2">
+                <li><a href title="국가대표팀">국가대표팀</a></li>
+                <li><a href title="올림픽대표팀">올림픽대표팀</a></li>
+                <li><a href title="U-20">U-20</a></li>
+                <li><a href title="통합 캘린더">통합 캘린더</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Shop">Shop</a>
+              <ul class="depth2">
+                <li><a href title="의류">의류</a></li>
+                <li><a href title="패션">패션</a></li>
+                <li><a href title="액세서리">액세서리</a></li>
+                <li><a href title="문구">문구</a></li>
+                <li><a href title="기념품">기념품</a></li>
+                <li><a href title="축구장비">축구장비</a></li>
+                <li><a href title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Play">Play</a>
+              <ul class="depth2">
+                <li><a href title="경매">경매</a></li>
+                <li><a href title="이벤트">이벤트</a></li>
+                <li><a href title="투표">투표</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="snb">
+          <a class="btn-mypage" href title="마이페이지"><i class="ic-24-mypage"></i></a>
+          <a class="btn-cart" href title="장바구니"><i class="ic-24-cart"></i></a>
+          <a class="btn-calendar" href title="통합캘린더"><i class="ic-24-info"></i></a>
+          <a class="btn-search" href title="검색"><i class="ic-24-search"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- side menu -->
+    <div class="side-menu" style="display:none;">
+      <div class="side-menu-header">
+        <div class="profile">
+          <div class="profile-img" style="background-image:url(../assets/images/icon/ic-24-nega-mypage.svg);"></div>
+          <a href="">마이페이지</a>
+        </div>
+        <div class="header-menu">
+          <ul>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">로그인</a></li>
+          </ul>
+          <button class="btn-close">
+            <i class="icon-24-nega-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="side-menu-content">
+        <ul class="side-menu-group">
+          <li class="has-child"><a href="javascript:;" class="font-point">Ticket</a>
+            <ul class="depth2">
+              <li><a href="" title="국가대표팀">국가대표팀</a></li>
+              <li><a href="" title="올림픽대표팀">올림픽대표팀</a></li>
+              <li><a href="" title="U-20">U-20</a></li>
+              <li><a href="" title="통합 캘린더">통합 캘린더</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a href="javascript:;" class="font-point">Shop</a>
+            <ul class="depth2">
+              <li><a href="" title="의류">의류</a></li>
+              <li><a href="" title="패션">패션</a></li>
+              <li><a href="" title="액세서리">액세서리</a></li>
+              <li><a href="" title="문구">문구</a></li>
+              <li><a href="" title="기념품">기념품</a></li>
+              <li><a href="" title="축구장비">축구장비</a></li>
+              <li><a href="" title="기타">기타</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a href="javascript:;" class="font-point">Play</a>
+            <ul class="depth2">
+              <li><a href="" title="경매">경매</a></li>
+              <li><a href="" title="이벤트">이벤트</a></li>
+              <li><a href="" title="투표">투표</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;" class="font-point">통합캘린더</a></li>
+        </ul>
+        <div class="side-menu-content-bottom">
+          <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <div class="side-menu-footer-menu">
+          <ul>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">판매자센터</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- //side menu -->
+    <!-- content -->
+    <div class="content login">
+      <!-- Content Section (Login) -->
+      <div class="content-section">
+        <h2 class="section-title">로그인</h2>
+        <div class="login-form">
+          <form action="">
+            <div class="input-row">
+              <input type="text" name="loginForm" id="loginID" placeholder="아이디" title="아이디">
+            </div>
+            <div class="input-row">
+              <input type="password" name="loginForm" id="loginPASS" placeholder="비밀번호" title="비밀번호">
+            </div>
+            <button class="btn-action btn-size-normal btn-red btn-login bg-skew" type="submit" title="로그인">로그인</button>
+          </form>
+        </div>
+        <div class="login-menu">
+          <ul>
+            <li><a href="">아이디 찾기</a></li>
+            <li><a href="">비밀번호 찾기</a></li>
+            <li><a href="">회원가입</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //Content Section (Login) -->
+      <!-- popup area -->
+      <!-- 아이디/패스워드찾기 팝업 -->
+      <div class="popup popup-find-id full-size" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>아이디 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <div class="tabs">
+              <ul class="tab">
+                <li class="on"><a href="javascript:;">아이디 찾기</a></li>
+                <li><a href="javascript:;">비밀번호 찾기</a></li>
+              </ul>
+              <div class="tab-content">
+                <form action="">
+                  <div class="form-field">
+                    <div class="input-row">
+                      <div class="input-title">인증방법</div>
+                      <div class="input-group radio-group">
+                        <div class="form-component"><label for="selCert01Tab01"><input type="radio" name="selCertTab01" id="selCert01Tab01" title="등록된 이메일로 찾기" checked><span>등록된 이메일로 찾기</span></label></div>
+                        <div class="form-component"><label for="selCert02Tab01"><input type="radio" name="selCertTab01" id="selCert02Tab01" title="등록된 휴대폰번호로 찾기"><span>등록된 휴대폰번호로 찾기</span></label></div>
+                        <div class="form-component"><label for="selCert03Tab01"><input type="radio" name="selCertTab01" id="selCert03Tab01" title="휴대폰 인증"><span>휴대폰 인증</span></label></div>
+                        <div class="form-component"><label for="selCert04Tab01"><input type="radio" name="selCertTab01" id="selCert04Tab01" title="아이핀 인증"><span>아이핀 인증</span></label></div>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">이름</div>
+                      <div class="input-group">
+                        <input type="text" name="userName" id="userNameTab01" placeholder="공백없이 입력해주세요" title="이름">
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">이메일</div>
+                      <div class="input-group email">
+                        <input type="email" name="userEmailId" id="userEmailIdTab01" placeholder="공백없이 입력해주세요" title="이메일아이디">
+                        <!-- 이메일 도메인을 선택했을 경우 -->
+                        <!-- <span>@naver.com</span> -->
+                        <!-- //이메일 도메인을 선택했을 경우 -->
+                        <select name="" id="">
+                          <option value="">직접입력</option>
+                          <option value="">네이버</option>
+                          <option value="">구글</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">휴대폰번호</div>
+                      <div class="input-group"><input type="tel" name="userPhone" id="userPhoneTab01" placeholder="공백없이 입력해주세요" title="휴대폰번호"></div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">본인명의 휴대폰으로 가입한 아이디 찾기</div>
+                      <button class="btn-form" type="button">인증하기</button>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">본인명의 아이핀으로 가입한 아이디 찾기</div>
+                      <button class="btn-form" type="button">인증하기</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-content" style="display:none;">
+                <form action="">
+                  <div class="form-field">
+                    <div class="input-row">
+                      <div class="input-title">인증방법</div>
+                      <div class="input-group radio-group">
+                        <div class="form-component"><label for="selCert01Tab02"><input type="radio" name="selCertTab02" id="selCert01Tab02" title="등록된 이메일로 찾기" checked><span>등록된 이메일로 찾기</span></label></div>
+                        <div class="form-component"><label for="selCert02Tab02"><input type="radio" name="selCertTab02" id="selCert02Tab02" title="등록된 휴대폰번호로 찾기"><span>등록된 휴대폰번호로 찾기</span></label></div>
+                        <div class="form-component"><label for="selCert03Tab02"><input type="radio" name="selCertTab02" id="selCert03Tab02" title="휴대폰 인증"><span>휴대폰 인증</span></label></div>
+                        <div class="form-component"><label for="selCert04Tab02"><input type="radio" name="selCertTab02" id="selCert04Tab02" title="아이핀 인증"><span>아이핀 인증</span></label></div>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">아이디</div>
+                      <div class="input-group"><input type="text" name="userId" id="userIdTab02" placeholder="영문으로 시작하는 6~20자 영문,숫자" title="아이디"></div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">이름</div>
+                      <div class="input-group"><input type="text" name="userName" id="userNameTab02" placeholder="공백없이 입력해주세요" title="이름"></div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">이메일</div>
+                      <div class="input-group email">
+                        <input type="email" name="userEmailId" id="userEmailIdTab01" placeholder="공백없이 입력해주세요" title="이메일아이디">
+                        <!-- 이메일 도메인을 선택했을 경우 -->
+                        <!-- <span>@naver.com</span> -->
+                        <!-- //이메일 도메인을 선택했을 경우 -->
+                        <select name="" id="">
+                          <option value="">직접입력</option>
+                          <option value="">네이버</option>
+                          <option value="">구글</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">휴대폰번호</div>
+                      <div class="input-group"><input type="tel" name="userPhone" id="userPhoneTab01" placeholder="공백없이 입력해주세요" title="휴대폰번호"></div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">본인명의 휴대폰으로 가입한 아이디 찾기</div>
+                      <button class="btn-form" type="button">인증하기</button>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-title">본인명의 아이핀으로 가입한 아이디 찾기</div>
+                      <button class="btn-form" type="button">인증하기</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //아이디/패스워드찾기 팝업 -->
+      <!-- 아이디 결과(부분노출) 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>아이디 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <!-- 아이디 찾기 결과 -->
+            <div class="popup-result">
+              <p>입력하신 정보와 일치하는 아이디는 다음과 같습니다.<br>
+                개인정보 보호를 위해 일부분은 *로 표시됩니다.</p>
+              <div class="result-value">
+                <div class="main-value">abcd***</div>
+                <div class="sub-value">2021.09.26 가입</div>
+              </div>
+            </div>
+            <!-- //아이디 찾기 결과 -->
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-wide btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();"><span class="pc-only">본인인증으로 </span>전체확인</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew btn-wide btn-login" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //아이디 결과(부분노출) 팝업 -->
+      <!-- 아이디 결과(전체노출) 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>아이디 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <!-- 아이디 찾기 결과 -->
+            <div class="popup-result">
+              <p>입력하신 정보와 일치하는 아이디는 다음과 같습니다.</p>
+              <div class="result-value">
+                <div class="main-value">abcdefg</div>
+                <div class="sub-value">2021.09.26 가입</div>
+              </div>
+            </div>
+            <!-- //아이디 찾기 결과 -->
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //아이디 결과(전체노출) 팝업 -->
+      <!-- 아이디 결과(결과없음) 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>아이디 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <!-- 아이디 찾기 결과 -->
+            <div class="popup-result">
+              <p>입력하신 정보와 일치하는 아이디가 없습니다.<br>정보를 다시 확인하시고 시도해주세요.</p>
+            </div>
+            <!-- //아이디 찾기 결과 -->
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //아이디 결과(결과없음) 팝업 -->
+      <!-- 패스워드 인증메일 발송 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>비밀번호 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <div class="popup-result">
+              <p>인증 메일이 발송되었습니다.<br>
+                메일함에서 인증 메일을 확인해주세요.<br>
+                인증번호는 10분간 유효하며 10분 이후에는 인증이 불가합니다.</p>
+            </div>
+            <form action="">
+              <div class="form-field">
+                <div class="input-row">
+                  <div class="input-title">인증번호</div>
+                  <div class="input-group">
+                    <input type="text" name="certNum" id="certNum" placeholder="인증번호를 입력하세요" title="인증번호">
+                    <span class="note">09:59</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //패스워드 인증메일 발송 팝업 -->
+      <!-- 패스워드 결과(전체노출) 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>아이디 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <!-- 패스워드 찾기 결과 -->
+            <div class="popup-result">
+              <p>이메일 인증이 완료되었습니다. 임시 비밀번호를 발급합니다.<br>
+                로그인 후 비밀번호를 변경해주세요.</p>
+              <div class="result-value">
+                <div class="main-value">adck3c!2</div>
+              </div>
+            </div>
+            <!-- //패스워드 찾기 결과 -->
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //패스워드 결과(전체노출) 팝업 -->
+      <!-- 새 패스워드 설정 팝업 -->
+      <div class="popup popup-find-id" style="display:block;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2>비밀번호 찾기</h2>
+          </div>
+          <div class="popup-content">
+            <div class="popup-result">
+              <p>휴대폰 인증이 완료되었습니다.<br>
+                비밀번호를 설정해주세요.</p>
+              <div class="result-value">
+                <div class="main-value">abcd***</div>
+              </div>
+            </div>
+            <form action="">
+              <div class="input-row">
+                <div class="input-title">새 비밀번호</div>
+                <div class="input-group">
+                  <input type="text" name="certNum" id="certNum" placeholder="8~12자의 영문, 숫자, 특수문자 조합" title="새 비밀번호">
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="input-title">새 비밀번호 확인</div>
+                <div class="input-group">
+                  <input type="text" name="certNum" id="certNum" placeholder="위의 비밀번호를 다시 입력해주세요." title="새 비밀번호 확인">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //새 패스워드 설정 팝업 -->
+      <!-- //popup area -->
+    </div>
+    <!-- //content -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-logo"><img src="../assets/images/logo-web.svg" alt=""></div>
+        <div class="footer-info">
+          <dl>
+            <dt>회사명 : </dt>
+            <dd>대한축구협회</dd>
+          </dl>
+          <dl>
+            <dt>대표자명 : </dt>
+            <dd>정몽규</dd>
+          </dl>
+          <dl>
+            <dt>소재지 : </dt>
+            <dd>03175 서울특별시 종로구 경희궁길 46</dd>
+          </dl>
+          <dl>
+            <dt>대표번호 : </dt>
+            <dd>02-2002-0707</dd>
+          </dl>
+          <dl>
+            <dt>사업자등록번호 : </dt>
+            <dd>102-82-00068</dd>
+          </dl>
+          <dl>
+            <dt>통신판매업신고번호 : </dt>
+            <dd>제2011-서울강서-0430호</dd>
+          </dl>
+          <dl>
+            <dt>호스팅서비스제공자 : </dt>
+            <dd>정승준(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <dl>
+            <dt>개인정보보호책임자 : </dt>
+            <dd>정몽주(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <p class="copyright">Copyright © 2017 CompanyName. All Rights Reserved.</p>
+        </div>
+        <div class="contact">
+          <h3>고객센터</h3>
+          <a class="tel" href="tel:1566-5666">1566-5666</a>
+          <a class="email" href="mailto:admin@kfaplay.com">admin@kfaplay.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div class="family-sites">
+          <select name="" id="">
+            <option value="" selected disabled>Family Site Link</option>
+            <option value="">KFA Photo 사이트</option>
+            <option value="">Join KFA</option>
+            <option value="">KFA 미디어 채널</option>
+            <option value="">KFA 아카데미 사이트</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <button class="btn-top" title="화면 상단으로 스크롤 이동"><i class="ic-24-nega-front"></i></button>
+  </div>
+  <!-- //wrapper -->
+
+
+  <!-- script load -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+  <script src="../assets/js/kfa_script.js"></script>
+</body>
+
+</html>

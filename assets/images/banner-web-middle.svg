@@ -1,0 +1,64 @@
+<svg width="1320" height="180" viewBox="0 0 1320 180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="59.527%" y1="47.771%" x2="85.411%" y2="58.506%" id="c">
+            <stop offset="0%"/>
+            <stop offset="100%"/>
+        </linearGradient>
+        <path id="a" d="M0 0h1320v180H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-140-2036h1600v6423H-140z"/>
+        <path d="M1468.358 380.704V-197L-154.327 690.96l-1.725 580.04z" fill="#F6F6F6"/>
+        <g>
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#D6E3BF" xlink:href="#a"/>
+            <g mask="url(#b)">
+                <path fill="url(#c)" opacity=".103" d="M0 127.89 50.031 191l297.92-4.91L413 158 302.997 0z" transform="translate(615.408 25.53)"/>
+                <path d="M699.6 27.53h218.808v127H699.6l-6.192-6.195V33.725l6.192-6.195z" fill="#FFF"/>
+                <path d="m687.516 27.53 5.892 6.195v113.731l-6.725 7.073h-70.275v-4.703c3.63 0 6.573-2.948 6.573-6.585s-2.943-6.585-6.573-6.585v-3.763c3.63 0 6.573-2.949 6.573-6.586 0-3.636-2.943-6.585-6.573-6.585v-4.703c3.63 0 6.573-2.949 6.573-6.586 0-3.636-2.943-6.585-6.573-6.585v-3.763c3.63 0 6.573-2.948 6.573-6.585s-2.943-6.585-6.573-6.585V80.21c3.63 0 6.573-2.948 6.573-6.585s-2.943-6.585-6.573-6.585v-4.704c3.63 0 6.573-2.948 6.573-6.585s-2.943-6.585-6.573-6.585v-3.763c3.63 0 6.573-2.949 6.573-6.585 0-3.637-2.943-6.586-6.573-6.586V27.53h71.108z" fill="#7BB317"/>
+                <g fill="#FFF">
+                    <path d="M661.886 120.03v-2.275h-10.9v2.275zM651.065 111.767l-.08-.054v2.24l5.41 3.617.026.018 5.442-3.452.023-.015v-2.529l-5.727 3.688zM655.399 104.228v3.752h-2.453v-4.355l-1.96-.671v7.3h10.9v-2.274h-4.634v-3.117zM651.02 98.413l-.034.012v2.204l10.833 3.71.067.022v-2.032l-2.283-.762v-2.705l-1.658-.281v2.44l-2.077-.697a31.906 31.906 0 0 0-2.207-.645c.61-.157 1.38-.367 2.207-.645l5.983-1.995.035-.01v-2.35l-10.867 3.734zM656.252 86.554c0-.554-.154-1-.461-1.34-.307-.338-.777-.507-1.41-.507-.633 0-1.106.169-1.418.507-.312.34-.468.786-.468 1.34v1.467h3.757v-1.467zm-5.344-.465c0-.574.085-1.086.255-1.538.17-.451.406-.832.709-1.142.302-.31.668-.548 1.098-.713.43-.164.9-.246 1.41-.246.51 0 .978.082 1.403.246.426.165.792.403 1.1.713.306.31.543.69.708 1.142.165.452.248.964.248 1.538v1.932h4.068v2.215h-11v-4.147zM650.908 78.796h9.37v-4.64l1.63.282v6.573h-11zM654.53 68.456c-.412.113-.797.217-1.156.31.36.095.744.198 1.155.311.411.113.839.245 1.283.395l2.183.734v-2.497l1.588.268v2.75l2.325.776v1.961l-11-3.766v-2.172l11-3.78v2.285l-6.096 2.03c-.444.151-.872.283-1.283.395M657.541 59.542h4.366v2.214h-4.394l-6.605 3.498v-2.482l4.706-2.341-4.706-2.328V56.03z"/>
+                </g>
+                <g fill="#575757">
+                    <path d="M882.408 69.53h22v2.05h-22zM882.408 84.905h22v2.05h-22zM882.408 90.03h22v3.075h-22zM882.408 107.455h22v3.075h-22zM882.408 87.98h22v1.025h-22zM882.408 79.78h22v1.025h-22zM882.408 81.83h22v1.025h-22zM882.408 96.18h22v1.025h-22zM882.408 104.38h22v1.025h-22zM882.408 102.33h22v1.025h-22zM882.408 98.23h22v2.05h-22zM882.408 73.63h22v4.1h-22z"/>
+                </g>
+                <text font-family="Roboto-Regular, Roboto" font-size="20" fill="#F13A36" transform="translate(615.408 25.53)">
+                                <tspan x="123" y="99">C O U P O N</tspan>
+                            </text>
+                <text font-family="Roboto-BoldItalic, Roboto" font-size="54" font-style="italic" font-weight="bold" fill="#000" transform="translate(615.408 25.53)">
+                                <tspan x="133" y="70">20</tspan>
+                                <tspan x="193.645" y="70" font-family="Roboto-LightItalic, Roboto" font-weight="300">%</tspan>
+                            </text>
+                <g>
+                    <text font-family="NotoSansKR-Regular, Noto Sans KR" font-size="16" fill="#508A22" transform="translate(384.408 18.53)">
+                                <tspan x="0" y="19">공식몰 단독혜택</tspan>
+                            </text>
+                    <path fill="#508A22" d="M384.408 47.53h107v2h-107z"/>
+                    <text font-family="NotoSansKR-Medium, Noto Sans KR" font-size="35" font-weight="400" letter-spacing="-2.275" fill="#000" transform="translate(384.408 18.53)">
+                                <tspan x="0" y="87.965">신규가입</tspan>
+                                <tspan x="119.49" y="87.965" font-family="NotoSansKR-Bold, Noto Sans KR" font-weight="bold" letter-spacing="-1.4"> </tspan>
+                                <tspan x="102.495" y="87" font-family="Roboto-Bold, Roboto" font-weight="bold" letter-spacing="-1.4">20%</tspan>
+                            </text>
+                    <text font-family="NotoSansKR-Light, Noto Sans KR" font-size="35" font-weight="300" letter-spacing="-1.4" fill="#000" transform="translate(384.408 18.53)">
+                                <tspan x="0" y="129">즉시 할인쿠폰</tspan>
+                            </text>
+                </g>
+                <g transform="translate(271 -13)">
+                    <ellipse fill="#F2CD3F" transform="scale(-1 1) rotate(46 0 -1469.53)" cx="669.381" cy="107.433" rx="10.5" ry="15.5"/>
+                    <ellipse fill="#F2CD3F" transform="rotate(46 363.908 185.03)" cx="363.908" cy="185.03" rx="5.5" ry="15.5"/>
+                    <ellipse fill="#F09D74" transform="rotate(-32 266.667 68.18)" cx="266.667" cy="68.179" rx="4.5" ry="12"/>
+                    <ellipse fill="#F2CD3F" transform="rotate(35 61.495 154.58)" cx="61.495" cy="154.58" rx="12" ry="15.5"/>
+                    <ellipse fill="#F2CD3F" transform="rotate(35 304.495 19.58)" cx="304.495" cy="19.58" rx="12" ry="15.5"/>
+                    <ellipse fill="#B9CC40" cx="92.908" cy="78.53" rx="12.5" ry="10"/>
+                    <ellipse fill="#B9CC40" transform="rotate(65 800.908 90.53)" cx="800.908" cy="90.53" rx="12.5" ry="10"/>
+                    <ellipse fill="#F09D74" cx="699.908" cy="43.53" rx="12.5" ry="10"/>
+                    <ellipse fill="#F09D74" transform="rotate(45 761.667 146.18)" cx="761.667" cy="146.179" rx="4.5" ry="12"/>
+                    <ellipse fill="#F09D74" transform="rotate(45 11.667 34.18)" cx="11.667" cy="34.179" rx="4.5" ry="12"/>
+                    <ellipse fill="#B9CC40" transform="rotate(-122 458.211 38.59)" cx="458.211" cy="38.59" rx="12.5" ry="8"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

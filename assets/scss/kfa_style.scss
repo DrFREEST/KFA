@@ -1,0 +1,28 @@
+/* ====================[[ Font Face ]]==================== */
+@import 'common/fontface';
+/* ====================[[ CSS Reset ]]==================== */
+@import 'common/destyle';
+/* ====================[[ Library ]]==================== */
+// @import 'jquery-ui.min';
+@import 'common/swiper-bundle';
+/* ====================[[ Icons ]]==================== */
+@import 'common/icons';
+/* ====================[[ Layout ]]==================== */
+@import 'layout';
+/* ====================[[ Responsive ]]==================== */
+@media (max-width: 1024px) {
+  .pc-only {
+    display: none !important;
+  }
+  html {
+    @media (max-width: 360px) {
+      font-size: 14px;
+    }
+    // font-size: 14px;
+    body {
+      .wrapper {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.icon {
+  @for $i from 0 through 100 {
+    &.size-#{$i} {
+      font-size: #{($i / 16 * 4) + 'rem'};
+    }
+  }
+  display: block;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: contain;
+  }
+  &.history-back {
+    width: 3rem;
+    height: 3rem;
+    background: {
+      position: center;
+      image: url(../images/icon-history-back.svg);
+      repeat: no-repeat;
+      size: 1.5rem;
+    }
+  }
+  &.search {
+    width: 3rem;
+    height: 3rem;
+    background: {
+      position: center;
+      image: url(../images/icon-search.svg);
+      repeat: no-repeat;
+      size: 2.375rem;
+    }
+  }
+  &.gift {
+    width: 3rem;
+    height: 3rem;
+    background: {
+      position: center;
+      image: url(../images/icon-gift.svg);
+      repeat: no-repeat;
+      size: 2.375rem;
+    }
+  }
+  &.clear {
+    width: 2.125rem;
+    height: 2.125rem;
+    background: {
+      position: center;
+      image: url(../images/icon-clear.svg);
+      repeat: no-repeat;
+      size: 2.125rem;
+    }
+  }
+  &.minus {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-count-minus.svg);
+      repeat: no-repeat;
+      size: 2.5rem;
+    }
+  }
+  &.plus {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-count-plus.svg);
+      repeat: no-repeat;
+      size: 2.5rem;
+    }
+  }
+  &.indepth {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-indepth.svg);
+      repeat: no-repeat;
+      size: 1rem;
+    }
+  }
+  &.top {
+    width: 2rem;
+    height: 2rem;
+    background: {
+      position: center;
+      image: url(../images/arrow-top.svg);
+      repeat: no-repeat;
+      size: 2rem;
+    }
+  }
+  &.prev {
+    width: 2rem;
+    height: 2rem;
+    background: {
+      position: center;
+      image: url(../images/arrow-prev.svg);
+      repeat: no-repeat;
+      size: 2rem;
+    }
+  }
+  &.next {
+    width: 2rem;
+    height: 2rem;
+    background: {
+      position: center;
+      image: url(../images/arrow-next.svg);
+      repeat: no-repeat;
+      size: 2rem;
+    }
+  }
+  &.toggle-expand {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-indepth.svg);
+      repeat: no-repeat;
+      size: 1rem;
+    }
+    transform: rotate(90deg);
+    @at-root li.expanded & {
+      transform: rotate(270deg);
+    }
+  }
+  &.check {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-check-off.svg);
+      repeat: no-repeat;
+      size: 2.5rem;
+    }
+    @at-root input[type='checkbox']:checked ~ & {
+      background: {
+        image: url(../images/icon-check-on.svg);
+      }
+    }
+  }
+  &.delete {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: {
+      position: center;
+      image: url(../images/icon-clear.svg);
+      repeat: no-repeat;
+      size: 2.125rem;
+    }
+  }
+}

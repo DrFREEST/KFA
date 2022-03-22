@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <!-- css load -->
+  <link href="../assets/css/kfa_style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header">
+      <div class="header-top">
+        <div class="util">
+          <div class="greeting">
+            <strong>손흥민님</strong>환영합니다!
+          </div>
+          <ul>
+            <li><a href title="회원가입">회원가입</a></li>
+            <li><a href title="로그인">로그인</a></li>
+            <li><a href title="고객센터">고객센터</a></li>
+            <li><a href title="판매자센터">판매자센터</a></li>
+          </ul>
+          <div class="actions">
+            <div class="change-language">
+              <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+              <ul>
+                <li><a href title="KOR">KOR</a></li>
+                <li><a href title="ENG">ENG</a></li>
+              </ul>
+            </div>
+            <a class="btn-sitemap" href title="사이트맵"><i class="ic-24-sitemap"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <h1 class="logo-header"><a href title="KFA PLAY 홈"><img src="../assets/images/logo-web.svg" alt="KFA PLAY"></a></h1>
+        <div class="gnb">
+          <ul class="depth1">
+            <li><a class="font-point" href title="Ticket">Ticket</a>
+              <ul class="depth2">
+                <li><a href title="국가대표팀">국가대표팀</a></li>
+                <li><a href title="올림픽대표팀">올림픽대표팀</a></li>
+                <li><a href title="U-20">U-20</a></li>
+                <li><a href title="통합 캘린더">통합 캘린더</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Shop">Shop</a>
+              <ul class="depth2">
+                <li><a href title="의류">의류</a></li>
+                <li><a href title="패션">패션</a></li>
+                <li><a href title="액세서리">액세서리</a></li>
+                <li><a href title="문구">문구</a></li>
+                <li><a href title="기념품">기념품</a></li>
+                <li><a href title="축구장비">축구장비</a></li>
+                <li><a href title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Play">Play</a>
+              <ul class="depth2">
+                <li><a href title="경매">경매</a></li>
+                <li><a href title="이벤트">이벤트</a></li>
+                <li><a href title="투표">투표</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="snb">
+          <a class="btn-mypage" href title="마이페이지"><i class="ic-24-mypage"></i></a>
+          <a class="btn-cart" href title="장바구니"><i class="ic-24-cart"></i></a>
+          <a class="btn-calendar" href title="통합캘린더"><i class="ic-24-info"></i></a>
+          <a class="btn-search" href title="검색"><i class="ic-24-search"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- side menu -->
+    <div class="side-menu" style="display:none;">
+      <div class="side-menu-header">
+        <div class="profile">
+          <div class="profile-img" style="background-image:url(../assets/images/icon/ic-24-nega-mypage.svg);"></div>
+          <a href="">마이페이지</a>
+        </div>
+        <div class="header-menu">
+          <ul>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">로그인</a></li>
+          </ul>
+          <button class="btn-close">
+            <i class="icon-24-nega-close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="side-menu-content">
+        <ul class="side-menu-group">
+          <li class="has-child"><a href="javascript:;" class="font-point">Ticket</a>
+            <ul class="depth2">
+              <li><a href="" title="국가대표팀">국가대표팀</a></li>
+              <li><a href="" title="올림픽대표팀">올림픽대표팀</a></li>
+              <li><a href="" title="U-20">U-20</a></li>
+              <li><a href="" title="통합 캘린더">통합 캘린더</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a href="javascript:;" class="font-point">Shop</a>
+            <ul class="depth2">
+              <li><a href="" title="의류">의류</a></li>
+              <li><a href="" title="패션">패션</a></li>
+              <li><a href="" title="액세서리">액세서리</a></li>
+              <li><a href="" title="문구">문구</a></li>
+              <li><a href="" title="기념품">기념품</a></li>
+              <li><a href="" title="축구장비">축구장비</a></li>
+              <li><a href="" title="기타">기타</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a href="javascript:;" class="font-point">Play</a>
+            <ul class="depth2">
+              <li><a href="" title="경매">경매</a></li>
+              <li><a href="" title="이벤트">이벤트</a></li>
+              <li><a href="" title="투표">투표</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;" class="font-point">통합캘린더</a></li>
+        </ul>
+        <div class="side-menu-content-bottom">
+          <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+        </div>
+      </div>
+      <div class="side-menu-footer">
+        <div class="side-menu-footer-menu">
+          <ul>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">판매자센터</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- //side menu -->
+    <!-- content -->
+    <div class="content sub calendar">
+      <!-- Content Section (Login) -->
+      <div class="content-section">
+        <h2 class="">팝업모음</h2>
+      </div>
+      <!-- //Content Section (Login) -->
+      <!-- popup area -->
+      <!-- 공유하기 팝업 -->
+      <div class="popup popup-share" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2 class="text-left">공유하기</h2>
+          </div>
+          <div class="popup-content">
+            <div class="share-form">
+              <form action="">
+                <div class="social-group">
+                  <ul>
+                    <li><a href=""><img src="../assets/images/icon/ic-kko.svg" alt=""></a></li>
+                    <li><a href=""><img src="../assets/images/icon/ic-facebook.svg" alt=""></a></li>
+                    <li><a href=""><img src="../assets/images/icon/ic-twitter.svg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="form-field">
+                  <div class="input-row no-border no-padding">
+                    <div class="input-group">
+                      <input type="text" name="" id="" value="www.kfa.co.kr" readonly>
+                      <button class="btn-form" type="button">복사하기</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <!-- <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button> -->
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //공유하기 팝업 -->
+      <!-- 배송지 목록 팝업 -->
+      <div class="popup popup-address-list full-size wide" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2 class="text-left">배송지 목록</h2>
+          </div>
+          <div class="popup-content">
+            <div class="address-list">
+              <ul>
+                <li>
+                  <div class="input-check"><input type="checkbox" name="" id=""></div>
+                  <div class="info">
+                    <div class="address-name">
+                      <span>축구협회</span>
+                      <span>홍길동</span>
+                    </div>
+                    <div class="address">[03175] 서울특별시 종로구 경희궁길 46 1층</div>
+                    <div class="tel">01041380034</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-check"><input type="checkbox" name="" id=""></div>
+                  <div class="info">
+                    <div class="address-name">
+                      <span>축구협회</span>
+                      <span>홍길동</span>
+                    </div>
+                    <div class="address">[03175] 서울특별시 종로구 경희궁길 46 1층</div>
+                    <div class="tel">01041380034</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-check"><input type="checkbox" name="" id=""></div>
+                  <div class="info">
+                    <div class="address-name">
+                      <span>축구협회</span>
+                      <span>홍길동</span>
+                    </div>
+                    <div class="address">[03175] 서울특별시 종로구 경희궁길 46 1층</div>
+                    <div class="tel">01041380034</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-check"><input type="checkbox" name="" id=""></div>
+                  <div class="info">
+                    <div class="address-name">
+                      <span>축구협회</span>
+                      <span>홍길동</span>
+                    </div>
+                    <div class="address">[03175] 서울특별시 종로구 경희궁길 46 1층</div>
+                    <div class="tel">01041380034</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="input-check"><input type="checkbox" name="" id=""></div>
+                  <div class="info">
+                    <div class="address-name">
+                      <span>축구협회</span>
+                      <span>홍길동</span>
+                    </div>
+                    <div class="address">[03175] 서울특별시 종로구 경희궁길 46 1층</div>
+                    <div class="tel">01041380034</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- paging -->
+            <div class="paging">
+              <a href="" class="btn-front"><i class="icon-arr-front"></i></a>
+              <a href="" class="btn-prev"><i class="icon-arr-prev"></i></a>
+              <!-- 페이지 -->
+              <a href="" class="on">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <!-- //페이지 -->
+              <a href="" class="btn-next"><i class="icon-arr-next"></i></a>
+              <a href="" class="btn-end"><i class="icon-arr-end"></i></a>
+            </div>
+            <!-- //paging -->
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //배송지 목록 팝업 -->
+      <!-- 주소 검색 팝업 -->
+      <div class="popup popup-address-list full-size wide" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2 class="text-left">주소 검색</h2>
+          </div>
+          <div class="popup-content">
+            <div class="search-frame">
+              <div class="search-form">
+                <form action="">
+                  <div class="form-field">
+                    <input type="search" name="" id="" placeholder="검색어를 입력해주세요">
+                    <button class="btn-delete" type="button"><i class="icon-24-close"></i></button>
+                    <button class="btn-search" type="submit"><i class="icon-24-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="search-tip">
+                <dl>
+                  <dt>주소검색 TIP</dt>
+                  <dd>도로면, 건물명, 지번 중 편한 방법을 입력해주세요</dd>
+                </dl>
+                <div class="result">
+                  <dl>
+                    <dt>도로명 + 건물번호</dt>
+                    <dd class="font-primary">예) 삼성로 512</dd>
+                  </dl>
+                  <dl>
+                    <dt>지역명(동/리) + 번지</dt>
+                    <dd class="font-primary">예) 삼평동 681</dd>
+                  </dl>
+                  <dl>
+                    <dt>건물명(아파트명)</dt>
+                    <dd class="font-primary">예) 분당 주공</dd>
+                  </dl>
+                  <dl>
+                    <dt>우편번호 5자리</dt>
+                    <dd class="font-primary">예) 21122</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //주소 검색 팝업 -->
+      <!-- 주소 검색(겸색결과) 팝업 -->
+      <div class="popup popup-address-list full-size wide" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2 class="text-left">주소 검색</h2>
+          </div>
+          <div class="popup-content">
+            <div class="search-frame">
+              <div class="search-form">
+                <form action="">
+                  <div class="form-field">
+                    <input type="search" name="" id="" placeholder="검색어를 입력해주세요" value="강남대로">
+                    <button class="btn-delete" type="button"><i class="icon-24-close"></i></button>
+                    <button class="btn-search" type="submit"><i class="icon-24-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="search-result">
+                <div class="result-count">검색결과 <span class="font-primary">(0개)</span></div>
+                <ul>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      06123<br>
+                      도로명: 서울특별시 서초구 강남대로 82<br>
+                      지번: 서울특별시 서초구 양재동 315<br>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //주소 검색(겸색결과) 팝업 -->
+      <!-- 이용약관 팝업 -->
+      <div class="popup popup-address-list full-size wide" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header">
+            <h2 class="text-left">대한축구협회 이용약관</h2>
+          </div>
+          <div class="popup-content">
+            <div class="terms-area">
+              [제 1장 총칙]<br>
+              • 제1조 (목적)<br>
+              • 이 약관은 사단법인 대한축구협회(이하 "회사"라고 합니다)가 운영하는 인터넷사이트 및 오프라인 영업장을 통하여 제공하는 전자상거래 관련 서비스(이하 "서비스"라고 합니다)를 이용함에 있어 회사와 이용자의 권리, 의무 및 책임사항을 정하는 것을 목적으로 합니다.<br>
+              <br>
+              • 제2조 (정의)<br>
+              • ① "대한축구협회"라 함은 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장(www.KFAplay.com)을 말하며, 아울러 사이버 몰을 운영하는 사업자의 의미로도 사용합니다..<br>
+              • ② "이용자"라 함은 회사에 접속하여 이 약관에 따라 회사가 제공하는 서비스를 받는 회원 및 비회원을 말합니다.<br>
+              • ③ "회원"이라 함은 회사에 개인정보를 제공하여 회원등록을 한 자로서, 회사의 정보를 지속적으로 제공받으며, 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.<br>
+              • ④ "비회원"이라 함은 회원에 가입하지 않고 회사가 제공하는 서비스를 이용하는 자를 말합니다.<br>
+              • ⑤.<br>
+              • ⑤ "어린이 회원"이라 함은 회사에 보호자의 동의를 얻어 개인정보를 제공하고 회원으로 등록한 만14세 미만의 자로서, 회사의 정보를 제공받고, 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 의미합니다.<br>
+              • ⑥ "오픈마켓"이라 함은 회사를 통하여 판매자와 구매자간에 물품 매매 거래가 이루어질 수 있는 사이버 거래장소를 온라인으로 제공하는 서비스 및 관련 부가 서비스 일체를 말합니다 .<br>
+              • ⑦ "판매자"라 함은 본 약관 및 오픈마켓 판매자약관을 승인하고, 회사와 서비스 이용계약을 체결한 자를 말하며, 물품을 판매할 의사로 해당 물품을 회사가 온라인으로 제공하는 양식에 맞추어 등록한 자의 의미로도 사용합니다.<br>
+              [제 1장 총칙]<br>
+              • 제1조 (목적)<br>
+              • 이 약관은 사단법인 대한축구협회(이하 "회사"라고 합니다)가 운영하는 인터넷사이트 및 오프라인 영업장을 통하여 제공하는 전자상거래 관련 서비스(이하 "서비스"라고 합니다)를 이용함에 있어 회사와 이용자의 권리, 의무 및 책임사항을 정하는 것을 목적으로 합니다.<br>
+              <br>
+              • 제2조 (정의)<br>
+              • ① "대한축구협회"라 함은 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장(www.KFAplay.com)을 말하며, 아울러 사이버 몰을 운영하는 사업자의 의미로도 사용합니다..<br>
+              • ② "이용자"라 함은 회사에 접속하여 이 약관에 따라 회사가 제공하는 서비스를 받는 회원 및 비회원을 말합니다.<br>
+              • ③ "회원"이라 함은 회사에 개인정보를 제공하여 회원등록을 한 자로서, 회사의 정보를 지속적으로 제공받으며, 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.<br>
+              • ④ "비회원"이라 함은 회원에 가입하지 않고 회사가 제공하는 서비스를 이용하는 자를 말합니다.<br>
+              • ⑤.<br>
+              • ⑤ "어린이 회원"이라 함은 회사에 보호자의 동의를 얻어 개인정보를 제공하고 회원으로 등록한 만14세 미만의 자로서, 회사의 정보를 제공받고, 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 의미합니다.<br>
+              • ⑥ "오픈마켓"이라 함은 회사를 통하여 판매자와 구매자간에 물품 매매 거래가 이루어질 수 있는 사이버 거래장소를 온라인으로 제공하는 서비스 및 관련 부가 서비스 일체를 말합니다 .<br>
+              • ⑦ "판매자"라 함은 본 약관 및 오픈마켓 판매자약관을 승인하고, 회사와 서비스 이용계약을 체결한 자를 말하며, 물품을 판매할 의사로 해당 물품을 회사가 온라인으로 제공하는 양식에 맞추어 등록한 자의 의미로도 사용합니다.<br>
+            </div>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button>
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //이용약관 팝업 -->
+      <!-- 배송조회 팝업 -->
+      <div class="popup popup-address-list full-size" style="display: ;">
+        <div class="popup-wrapper">
+          <div class="popup-header no-border no-margin">
+            <h2 class="text-left">배송조회</h2>
+          </div>
+          <div class="popup-content">
+            <table class="info-table auto">
+              <colgroup>
+                <col style="width:calc(100% * 92/472);">
+                <col style="width:calc(100% * 144/472);">
+                <col style="width:calc(100% * 92/472);">
+                <col style="width:calc(100% * 144/472);">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>택배사</th>
+                  <td colspan="3" class="no-padding">CJ대한통운</td>
+                </tr>
+                <tr>
+                  <th>운송장번호</th>
+                  <td colspan="3" class="no-padding">433889352773</td>
+                </tr>
+                <tr>
+                  <th>보내는분</th>
+                  <td class="no-padding">홍길동</td>
+                  <th>받는분</th>
+                  <td class="no-padding">송진호</td>
+                </tr>
+                <tr>
+                  <th>배송상태</th>
+                  <td class="no-padding">배송완료</td>
+                  <th>인수자</th>
+                  <td class="no-padding">본인</td>
+                </tr>
+                <tr>
+                  <th>주소</th>
+                  <td colspan="3" class="no-padding">서울시 강남구 역삼로 9길 25</td>
+                </tr>
+                <tr>
+                  <td colspan="4" class="no-padding">
+                    <table class="inner-table">
+                      <colgroup>
+                        <col style="width:130px;">
+                        <col style="width:auto;">
+                        <col style="width:130px;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>처리일시</th>
+                          <th>배송단계</th>
+                          <th>처리장소</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2021-12-25<br>
+                            11:17</td>
+                          <td>배송완료</td>
+                          <td>해운(대)</td>
+                        </tr>
+                        <tr>
+                          <td>2021-12-25<br>
+                            11:17</td>
+                          <td>간선상차</td>
+                          <td>해운(대)</td>
+                        </tr>
+                        <tr>
+                          <td>2021-12-25<br>
+                            11:17</td>
+                          <td>입고</td>
+                          <td>해운(대)</td>
+                        </tr>
+                        <tr>
+                          <td>2021-12-25<br>
+                            11:17</td>
+                          <td>집화완료</td>
+                          <td>해운(대)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="popup-footer">
+            <div class="btn-group">
+              <!-- <button class="btn-action btn-size-normal btn-dark-blue bg-skew btn-close" type="button" onclick="javascript:$(this).parents('.popup').hide();">닫기</button> -->
+              <button class="btn-action btn-size-normal btn-red bg-skew" type="button" onclick="javascript:$(this).parents('.popup').hide();">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //배송조회 팝업 -->
+      <!-- //popup area -->
+    </div>
+    <!-- //content -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-logo"><img src="../assets/images/logo-web.svg" alt=""></div>
+        <div class="footer-info">
+          <dl>
+            <dt>회사명 : </dt>
+            <dd>대한축구협회</dd>
+          </dl>
+          <dl>
+            <dt>대표자명 : </dt>
+            <dd>정몽규</dd>
+          </dl>
+          <dl>
+            <dt>소재지 : </dt>
+            <dd>03175 서울특별시 종로구 경희궁길 46</dd>
+          </dl>
+          <dl>
+            <dt>대표번호 : </dt>
+            <dd>02-2002-0707</dd>
+          </dl>
+          <dl>
+            <dt>사업자등록번호 : </dt>
+            <dd>102-82-00068</dd>
+          </dl>
+          <dl>
+            <dt>통신판매업신고번호 : </dt>
+            <dd>제2011-서울강서-0430호</dd>
+          </dl>
+          <dl>
+            <dt>호스팅서비스제공자 : </dt>
+            <dd>정승준(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <dl>
+            <dt>개인정보보호책임자 : </dt>
+            <dd>정몽주(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <p class="copyright">Copyright © 2017 CompanyName. All Rights Reserved.</p>
+        </div>
+        <div class="contact">
+          <h3>고객센터</h3>
+          <a class="tel" href="tel:1566-5666">1566-5666</a>
+          <a class="email" href="mailto:admin@kfaplay.com">admin@kfaplay.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div class="family-sites">
+          <select name="" id="">
+            <option value="" selected disabled>Family Site Link</option>
+            <option value="">KFA Photo 사이트</option>
+            <option value="">Join KFA</option>
+            <option value="">KFA 미디어 채널</option>
+            <option value="">KFA 아카데미 사이트</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <button class="btn-top" title="화면 상단으로 스크롤 이동"><i class="ic-24-nega-front"></i></button>
+  </div>
+  <!-- //wrapper -->
+
+
+  <!-- script load -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+  <script src="../assets/js/kfa_script.js"></script>
+  <!-- Document On Ready Script -->
+  <script>
+  </script>
+</body>
+
+</html>

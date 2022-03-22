@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "assets/css"
+    }
+  ],
+  "liveServer.settings.port": 5501,
+  "nuxt.isNuxtApp": false,
+}

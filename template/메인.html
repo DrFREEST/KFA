@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <!-- css load -->
+  <link href="../assets/css/kfa_style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- top banner -->
+    <div class="top-banner">
+      <a class="banner-clip" href>
+        <img src='https://dummyimage.com/1400x80/f1eeec/666666.png?text=Banner%20Image' alt='' />
+      </a>
+      <div class="top-banner-action">
+        <input id="chaekTopBannerToggler" name="chaekTopBannerToggler" type="checkbox">
+        <label for="chaekTopBannerToggler">하루동안 보지않기</label>
+        <button class="btn-close" title="배너 닫기"><i class="ic-24-close"></i></button>
+      </div>
+    </div>
+    <!-- //top banner -->
+    <!-- header -->
+    <div class="header">
+      <div class="header-top">
+        <div class="util">
+          <div class="greeting">
+            <strong>손흥민님</strong>환영합니다!
+          </div>
+          <ul>
+            <li><a href title="회원가입">회원가입</a></li>
+            <li><a href title="로그인">로그인</a></li>
+            <li><a href title="고객센터">고객센터</a></li>
+            <li><a href title="판매자센터">판매자센터</a></li>
+          </ul>
+          <div class="actions">
+            <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+            <a class="btn-sitemap" href title="사이트맵"><i class="ic-24-sitemap"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <h1 class="logo-header"><a href title="KFA PLAY 홈"><img src="../assets/images/logo-web.svg" alt="KFA PLAY"></a></h1>
+        <div class="gnb">
+          <ul class="depth1">
+            <li><a class="font-point" href title="Ticket">Ticket</a>
+              <ul class="depth2">
+                <li><a href title="국가대표팀">국가대표팀</a></li>
+                <li><a href title="올림픽대표팀">올림픽대표팀</a></li>
+                <li><a href title="U-20">U-20</a></li>
+                <li><a href title="통합 캘린더">통합 캘린더</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Shop">Shop</a>
+              <ul class="depth2">
+                <li><a href title="의류">의류</a></li>
+                <li><a href title="패션">패션</a></li>
+                <li><a href title="액세서리">액세서리</a></li>
+                <li><a href title="문구">문구</a></li>
+                <li><a href title="기념품">기념품</a></li>
+                <li><a href title="축구장비">축구장비</a></li>
+                <li><a href title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li><a class="font-point" href title="Play">Play</a>
+              <ul class="depth2">
+                <li><a href title="경매">경매</a></li>
+                <li><a href title="이벤트">이벤트</a></li>
+                <li><a href title="투표">투표</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="snb">
+          <a class="btn-mypage" href title="마이페이지"><i class="ic-24-mypage"></i></a>
+          <a class="btn-cart" href title="장바구니"><i class="ic-24-cart"></i></a>
+          <a class="btn-calendar" href title="통합캘린더"><i class="ic-24-info"></i></a>
+          <a class="btn-search" href="javascript:callSearch();" title="검색"><i class="ic-24-search"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- 검색 영역 -->
+    <div class="search-area">
+      <div class="search-form">
+        <form action="">
+          <div class="form-field">
+            <input type="search" name="" id="" placeholder="검색어를 입력해주세요">
+            <button class="btn-close" type="button"><i class="icon-24-close"></i></button>
+            <button class="btn-search" type="submit"><i class="icon-24-search"></i></button>
+          </div>
+          <div class="recent-search">
+            <h3>최근검색어</h3>
+            <ul>
+              <li><a href="">한일대표전</a></li>
+              <li><a href="">국가대표전</a></li>
+              <li><a href="">평가전</a></li>
+              <li><a href="">월드컵</a></li>
+              <li><a href="">손흥민</a></li>
+            </ul>
+          </div>
+        </form>
+        <button class="btn-close pc-only"><i class="icon-24-close"></i></button>
+      </div>
+    </div>
+    <!-- //검색 영역 -->
+    <!-- side menu -->
+    <div class="side-menu">
+      <!-- 모바일 메뉴 -->
+      <div class="mo-menu">
+        <div class="side-menu-header">
+          <div class="profile">
+            <div class="profile-img" style="background-image:url(../assets/images/icon/ic-24-nega-mypage.svg);"></div>
+            <a href="">마이페이지</a>
+          </div>
+          <div class="header-menu">
+            <ul>
+              <li><a href="">회원가입</a></li>
+              <li><a href="">로그인</a></li>
+            </ul>
+            <button class="btn-close">
+              <i class="icon-24-nega-close"></i>
+            </button>
+          </div>
+        </div>
+        <div class="side-menu-content">
+          <ul class="side-menu-group">
+            <li class="has-child"><a href="javascript:;" class="font-point">Ticket</a>
+              <ul class="depth2">
+                <li><a href="" title="국가대표팀">국가대표팀</a></li>
+                <li><a href="" title="올림픽대표팀">올림픽대표팀</a></li>
+                <li><a href="" title="U-20">U-20</a></li>
+                <li><a href="" title="통합 캘린더">통합 캘린더</a></li>
+              </ul>
+            </li>
+            <li class="has-child"><a href="javascript:;" class="font-point">Shop</a>
+              <ul class="depth2">
+                <li><a href="" title="의류">의류</a></li>
+                <li><a href="" title="패션">패션</a></li>
+                <li><a href="" title="액세서리">액세서리</a></li>
+                <li><a href="" title="문구">문구</a></li>
+                <li><a href="" title="기념품">기념품</a></li>
+                <li><a href="" title="축구장비">축구장비</a></li>
+                <li><a href="" title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li class="has-child"><a href="javascript:;" class="font-point">Play</a>
+              <ul class="depth2">
+                <li><a href="" title="경매">경매</a></li>
+                <li><a href="" title="이벤트">이벤트</a></li>
+                <li><a href="" title="투표">투표</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:;" class="font-point">통합캘린더</a></li>
+          </ul>
+          <div class="side-menu-content-bottom">
+            <button class="btn-lang" title="언어변경(영문)"><span>KOR</span><i class="ic-16-language"></i></button>
+          </div>
+        </div>
+        <div class="side-menu-footer">
+          <div class="side-menu-footer-menu">
+            <ul>
+              <li><a href="">고객센터</a></li>
+              <li><a href="">판매자센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //모바일 메뉴 -->
+      <div class="pc-menu">
+        <div class="pc-menu-inner">
+          <div class="category-menu">
+            <ul>
+              <li class="font-point">
+                <a href="">Ticket</a>
+                <ul>
+                  <li><a href="">국가대표팀</a></li>
+                  <li><a href="">올림픽대표팀</a></li>
+                  <li><a href="">U-20</a></li>
+                </ul>
+              </li>
+              <li class="font-point">
+                <a href="">Shop</a>
+                <ul>
+                  <li><a href="">의류</a></li>
+                  <li><a href="">패션</a></li>
+                  <li><a href="">액세서리</a></li>
+                  <li><a href="">문구</a></li>
+                  <li><a href="">기념품</a></li>
+                  <li><a href="">축구장비</a></li>
+                  <li><a href="">기타</a></li>
+                </ul>
+              </li>
+              <li class="font-point">
+                <a href="">Play</a>
+                <ul>
+                  <li><a href="">이벤트</a></li>
+                  <li><a href="">경매</a></li>
+                  <li><a href="">투표</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="util-menu">
+            <ul>
+              <li>
+                <a href="">마이페이지</a>
+                <ul>
+                  <li><a href="">포인트현황</a></li>
+                  <li><a href="">등급별혜택보기</a></li>
+                  <li><a href="">할인쿠폰현황</a></li>
+                  <li><a href="">구매배송조회</a></li>
+                  <li><a href="">관심상품</a></li>
+                  <li><a href="">단골샵</a></li>
+                  <li><a href="">문의내역</a></li>
+                  <li><a href="">배송지관리</a></li>
+                  <li><a href="">배송지관리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">장바구니</a>
+              </li>
+              <li>
+                <a href="">고객센터</a>
+              </li>
+              <li>
+                <a href="">판매자센터</a>
+                <ul>
+                  <li><a href="">입점신청</a></li>
+                  <li><a href="">입점절차</a></li>
+                  <li><a href="">입점서류</a></li>
+                  <li><a href="">안전거래가이드</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-close"><i class="icon-24-close"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- //side menu -->
+    <!-- main top visual slide -->
+    <div class="main-top-visual">
+      <div class="top-visual swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(https://dummyimage.com/1600x760/666666/dfdfdf.png?text=Visual%20Slide%20Image%201);"><a href="" title="이벤트 바로가기" class="btn-link">이벤트 바로가기</a></div>
+          <div class="swiper-slide" style="background-image:url(https://dummyimage.com/1600x760/888888/dfdfdf.png?text=Visual%20Slide%20Image%202);"><a href="" title="이벤트 바로가기" class="btn-link">이벤트 바로가기</a></div>
+          <div class="swiper-slide" style="background-image:url(https://dummyimage.com/1600x760/666666/dfdfdf.png?text=Visual%20Slide%20Image%203);"><a href="" title="이벤트 바로가기" class="btn-link">이벤트 바로가기</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- top notice -->
+      <div class="top-notice bg-skew">
+        <h2 class="font-point">Notice</h2>
+        <div class="notice-list swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="date">2021-10-12</div>
+              <div class="subject"><a href="">KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내1</a></div>
+            </li>
+            <li class="swiper-slide">
+              <div class="date">2021-10-12</div>
+              <div class="subject"><a href="">KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내2</a></div>
+            </li>
+            <li class="swiper-slide">
+              <div class="date">2021-10-12</div>
+              <div class="subject"><a href="">KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내3</a></div>
+            </li>
+            <li class="swiper-slide">
+              <div class="date">2021-10-12</div>
+              <div class="subject"><a href="">KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내4</a></div>
+            </li>
+            <li class="swiper-slide">
+              <div class="date">2021-10-12</div>
+              <div class="subject"><a href="">KFA PLAY 사이트 리뉴얼로 인한 비밀번호 변경안내</a></div>
+            </li>
+          </ul>
+          <div class="swiper-button-prev"><i class="ic-24-arr-prev"></i></div>
+          <div class="swiper-button-next"><i class="ic-24-arr-next"></i></div>
+        </div>
+        <button class="btn-more" title="더보기"><i class="ic-24-more"></i></button>
+      </div>
+      <!-- //top notice -->
+    </div>
+    <!-- //top visual slide -->
+    <!-- 영상 팝업 -->
+    <div class="vod-popup-area">
+      <div class="vod-frame">
+        <!-- 동영상 솔루션 들어갈 영역 -->
+        <div class="vod-area"></div>
+        <!-- //동영상 솔루션 들어갈 영역 -->
+        <button class="btn-play" titlte="동영상 재생하기"><img src="../assets/images/icon/btn-play.svg" alt=""></button>
+        <button class="btn-close" title="동영상 팝업 닫기"><i class="ic-24-nega-close"></i></button>
+      </div>
+    </div>
+    <!-- //영상 팝업 -->
+    <!-- content -->
+    <div class="content main">
+      <!-- content section (Ticket) -->
+      <div class="content-section ticket" id="ticket">
+        <div class="section-bg"></div>
+        <div class="section-title">
+          <h2 class="font-point">Ticket</h2>
+          <p>최근 경기 일정을 확인하시고 예매해 보세요</p>
+          <a class="btn-more" href=""><span>전체보기</span><i class="ic-24-more"></i></a>
+        </div>
+        <!-- 경기 일정 영역 -->
+        <div class="game-calendar">
+          <!-- 달력 -->
+          <div class="date-list">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- 월 구분 -->
+                <div class="swiper-slide month">
+                  <dl>
+                    <dt>2021</dt>
+                    <dd>11</dd>
+                  </dl>
+                </div>
+                <!-- //월 구분 -->
+                <!-- 날짜 (오늘) -->
+                <div class="swiper-slide date today">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd><a href="">17</a></dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (오늘) -->
+                <!-- 날짜 (선택된 날짜) -->
+                <div class="swiper-slide date selected">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>
+                      <a href="">18</a>
+                      <!-- 선택된 날짜에 포함된 경기수 만큼 점 추가 -->
+                      <ul class="games">
+                        <li><i class="dot"></i></li>
+                        <li><i class="dot"></i></li>
+                        <li><i class="dot"></i></li>
+                      </ul>
+                      <!-- //선택된 날짜에 포함된 경기수 만큼 i 추가 -->
+                    </dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (선택된 날짜) -->
+                <!-- 날짜 (경기 없을 경우) -->
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>19</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>20</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>21</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>22</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>23</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>24</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>25</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>26</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>27</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>28</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>29</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>30</dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (경기 없을 경우) -->
+                <!-- 월 구분 -->
+                <div class="swiper-slide">
+                  <dl>
+                    <dt>2021</dt>
+                    <dd>12</dd>
+                  </dl>
+                </div>
+                <!-- //월 구분 -->
+                <!-- 날짜 (경기 없을 경우) -->
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>1</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>2</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>3</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>4</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>5</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>6</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>7</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>8</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>9</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>10</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>11</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>12</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>13</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>14</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>15</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>16</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>17</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>18</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>19</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>20</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>21</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>22</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>23</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>24</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>25</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>26</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>27</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>28</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>29</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>30</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>31</dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (경기 없을 경우) -->
+                <!-- 월 구분 -->
+                <div class="swiper-slide month">
+                  <dl>
+                    <dt>2022</dt>
+                    <dd>1</dd>
+                  </dl>
+                </div>
+                <!-- //월 구분 -->
+                <!-- 날짜 (경기 없을 경우) -->
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>1</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>2</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>3</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>4</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>5</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>6</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>7</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>8</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>9</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>10</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>11</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>12</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>13</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>14</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>15</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>16</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>17</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>18</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>19</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>20</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>21</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>22</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>23</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>24</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>25</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>26</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>27</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>28</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>29</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>30</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>31</dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (경기 없을 경우) -->
+                <!-- 월 구분 -->
+                <div class="swiper-slide month">
+                  <dl>
+                    <dt>2022</dt>
+                    <dd>2</dd>
+                  </dl>
+                </div>
+                <!-- //월 구분 -->
+                <!-- 날짜 (경기 없을 경우) -->
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>1</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>2</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>3</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>4</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>5</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>6</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>7</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Tue</dt>
+                    <dd>8</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Wed</dt>
+                    <dd>9</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Thu</dt>
+                    <dd>10</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Fri</dt>
+                    <dd>11</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sat</dt>
+                    <dd>12</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Sun</dt>
+                    <dd>13</dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide date">
+                  <dl>
+                    <dt>Mon</dt>
+                    <dd>14</dd>
+                  </dl>
+                </div>
+                <!-- //날짜 (경기 없을 경우) -->
+              </div>
+            </div>
+          </div>
+          <!-- //달력 -->
+          <!-- 경기 일정 슬라이드 -->
+          <div class="game-slide">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 경기장 정보 -->
+                  <div class="stadium-info" style="background-image: url(https://dummyimage.com/1320x144/666666/777777.png?text=Stadium%20Image);">
+                    <div class="game-title">2022 카타르 월드컵 아시아 최종예선</div>
+                    <div class="location"><i class="ic-24-nega-place"></i><span>아자디스타디움</span></div>
+                  </div>
+                  <!-- //경기장 정보 -->
+                  <!-- 경기 정보 -->
+                  <div class="game-info">
+                    <div class="team home">
+                      <div class="flag" title="대한민국" style="background-image: url(../assets/images/main-ticket-country-01.svg);"></div>
+                      <div class="team-name big">대한민국</div>
+                      <div class="team-name small">Republic of Korea</div>
+                    </div>
+                    <div class="verses">VS</div>
+                    <div class="team away">
+                      <div class="flag" title="이란" style="background-image: url(../assets/images/main-ticket-country-02.svg);"></div>
+                      <div class="team-name big">이란</div>
+                      <div class="team-name small">Iran</div>
+                    </div>
+                    <div class="schedule">
+                      <div class="date">2021.10.12(화) 22:30</div>
+                      <div class="remaining-time" title="남은시간 : 03일 14시간 45분 56초">
+                        <dl>
+                          <dt>Days</dt>
+                          <dd>03</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Hrs</dt>
+                          <dd>14</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Mins</dt>
+                          <dd>45</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Secs</dt>
+                          <dd>56</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //경기 정보 -->
+                  <div class="game-action">
+                    <!-- CASE-01 : 일반 예매 -->
+                    <button class="btn-reservation font-point bg-skew"><span>예매하기</span></button>
+                    <!-- //CASE-01 : 일반 예매 -->
+                    <!-- CASE-02 : 예매 오픈 전 -->
+                    <!-- <button class="btn-reservation font-point bg-skew disabled"><span>10.01 14:00 오픈</di></button> -->
+                    <!-- //CASE-02 : 예매 오픈 전 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- <button class="btn-reservation font-point bg-skew special"><span>예매하기</spa></button> -->
+                    <!-- //CASE-03 : 특별 권한 예매 -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- 경기장 정보 -->
+                  <div class="stadium-info" style="background-image: url(https://dummyimage.com/1320x144/666666/777777.png?text=Stadium%20Image);">
+                    <div class="game-title">2022 카타르 월드컵 아시아 최종예선</div>
+                    <div class="location"><i class="ic-24-nega-place"></i><span>아자디스타디움</span></div>
+                  </div>
+                  <!-- //경기장 정보 -->
+                  <!-- 경기 정보 -->
+                  <div class="game-info">
+                    <div class="team home">
+                      <div class="flag" title="대한민국" style="background-image: url(../assets/images/main-ticket-country-01.svg);"></div>
+                      <div class="team-name big">대한민국</div>
+                      <div class="team-name small">Republic of Korea</div>
+                    </div>
+                    <div class="verses">VS</div>
+                    <div class="team away">
+                      <div class="flag" title="이란" style="background-image: url(../assets/images/main-ticket-country-02.svg);"></div>
+                      <div class="team-name big">이란</div>
+                      <div class="team-name small">Iran</div>
+                    </div>
+                    <div class="schedule">
+                      <div class="date">2021.10.12(화) 22:30</div>
+                      <div class="remaining-time" title="남은시간 : 03일 14시간 45분 56초">
+                        <dl>
+                          <dt>Days</dt>
+                          <dd>03</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Hrs</dt>
+                          <dd>14</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Mins</dt>
+                          <dd>45</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Secs</dt>
+                          <dd>56</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //경기 정보 -->
+                  <div class="game-action">
+                    <!-- CASE-01 : 일반 예매 -->
+                    <!-- <button class="btn-reservation font-point bg-skew"><span>예매하기</span></button> -->
+                    <!-- //CASE-01 : 일반 예매 -->
+                    <!-- CASE-02 : 예매 오픈 전 -->
+                    <button class="btn-reservation font-point bg-skew disabled"><span>10.01 14:00 오픈</di></button>
+                    <!-- //CASE-02 : 예매 오픈 전 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- <button class="btn-reservation font-point bg-skew special"><span>예매하기</spa></button> -->
+                    <!-- //CASE-03 : 특별 권한 예매 -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- 경기장 정보 -->
+                  <div class="stadium-info" style="background-image: url(https://dummyimage.com/1320x144/666666/777777.png?text=Stadium%20Image);">
+                    <div class="game-title">2022 카타르 월드컵 아시아 최종예선</div>
+                    <div class="location"><i class="ic-24-nega-place"></i><span>아자디스타디움</span></div>
+                  </div>
+                  <!-- //경기장 정보 -->
+                  <!-- 경기 정보 -->
+                  <div class="game-info">
+                    <div class="team home">
+                      <div class="flag" title="대한민국" style="background-image: url(../assets/images/main-ticket-country-01.svg);"></div>
+                      <div class="team-name big">대한민국</div>
+                      <div class="team-name small">Republic of Korea</div>
+                    </div>
+                    <div class="verses">VS</div>
+                    <div class="team away">
+                      <div class="flag" title="이란" style="background-image: url(../assets/images/main-ticket-country-02.svg);"></div>
+                      <div class="team-name big">이란</div>
+                      <div class="team-name small">Iran</div>
+                    </div>
+                    <div class="schedule">
+                      <div class="date">2021.10.12(화) 22:30</div>
+                      <div class="remaining-time" title="남은시간 : 03일 14시간 45분 56초">
+                        <dl>
+                          <dt>Days</dt>
+                          <dd>03</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Hrs</dt>
+                          <dd>14</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Mins</dt>
+                          <dd>45</dd>
+                        </dl>
+                        <span>:</span>
+                        <dl>
+                          <dt>Secs</dt>
+                          <dd>56</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //경기 정보 -->
+                  <div class="game-action">
+                    <!-- CASE-01 : 일반 예매 -->
+                    <button class="btn-reservation font-point bg-skew"><span>예매하기</span></button>
+                    <!-- //CASE-01 : 일반 예매 -->
+                    <!-- CASE-02 : 예매 오픈 전 -->
+                    <!-- <button class="btn-reservation font-point bg-skew disabled"><span>10.01 14:00 오픈</di></button> -->
+                    <!-- //CASE-02 : 예매 오픈 전 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- CASE-03 : 특별 권한 예매 -->
+                    <!-- <button class="btn-reservation font-point bg-skew special"><span>예매하기</spa></button> -->
+                    <!-- //CASE-03 : 특별 권한 예매 -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-button-prev outside"><i class="ic-32-arr-prev"></i></div>
+            <div class="swiper-button-next outside"><i class="ic-32-arr-next"></i></div>
+          </div>
+          <!-- //경기 일정 슬라이드 -->
+        </div>
+        <!-- //경기 일정 영역 -->
+      </div>
+      <!-- //content section (Ticket) -->
+      <!-- banner section -->
+      <div class="content-section banner">
+        <a href title="[공식몰 단독혜택] 신규가입 20% 즉시할인쿠폰 받으러 가기"><img src="https://dummyimage.com/1320x180/444444/f5f5f5.png?text=Banner Image" alt="공식몰 단독혜택"></a>
+      </div>
+      <!-- //banner section -->
+      <!-- content section (Shop) -->
+      <div class="content-section shop" id="shop">
+        <div class="section-bg">
+          <img class="particle-01" src="../assets/images/main-pattern-02.svg" alt="">
+        </div>
+        <div class="section-title lined">
+          <h2 class="font-point">Shop</h2>
+          <p>판매되고 있는 상품을 지금 바로 이용해 보세요</p>
+        </div>
+        <!-- 인기상품 -->
+        <div class="shop-zone popular">
+          <div class="zone-title">
+            <h3>인기상품</h3>
+            <div class="tab swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href title><i class="icon-main-shop-cate-01"></i><span>의류</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-02"></i><span>패션</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-03"></i><span>액세서리</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-04"></i><span>문구</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-05"></i><span>기념품</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-06"></i><span>축구장비</span></a></li>
+                <li class="swiper-slide"><a href title><i class="icon-main-shop-cate-07"></i><span>기타</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 상품목록 -->
+          <div class="goods-list">
+            <ul>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">01</div>
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>8,000,000</strong>원</div>
+                    <div class="origin-price"><strong>10,000,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">02</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">03</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>8,000,000</strong>원</div>
+                    <div class="origin-price"><strong>10,000,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">04</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">05</div>
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">06</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">07</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                  <div class="flag rank">08</div>
+                  <!-- 관심상품 토글 버튼(해제된 상태) -->
+                  <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(해제된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //상품목록 -->
+        </div>
+        <!-- //인기상품 -->
+        <!-- 할인상품 -->
+        <div class="shop-zone discount">
+          <div class="zone-title">
+            <h3>할인상품</h3>
+            <p>가격인하 상품을 지금 바로 이용해 보세요</p>
+          </div>
+          <!-- 상품목록 -->
+          <div class="goods-list swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/409x478/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼 -->
+                  <button class="btn-like" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼 -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <div class="swiper-button-prev"><i class="ic-32-arr-prev"></i></div>
+            <div class="swiper-button-next"><i class="ic-32-arr-next"></i></div>
+          </div>
+          <!-- //상품목록 -->
+        </div>
+        <!-- //할인상품 -->
+        <!-- 신상품/추천상품 -->
+        <div class="shop-zone new">
+          <div class="tabs">
+            <ul class="tab">
+              <li class="zone-title on"><a href="javascript:;" title="신상품">신상품</a></li>
+              <li class="zone-title"><a href="javascript:;" title="추천상품">추천상품</a></li>
+            </ul>
+            <div class="tab-content">
+              <!-- 상품목록 -->
+              <div class="goods-list">
+                <ul>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //상품목록 -->
+            </div>
+            <div class="tab-content" style="display:none;">
+              <!-- 상품목록 -->
+              <div class="goods-list">
+                <ul>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //상품목록 -->
+            </div>
+          </div>
+        </div>
+        <!-- //신상품/추천상품 -->
+
+        <!-- 할인상품 (CASE : 신상품/추천상품이 없는 경우) -->
+        <div class="shop-zone discount wide">
+          <div class="zone-title">
+            <h3>할인상품</h3>
+            <p>가격인하 상품을 지금 바로 이용해 보세요</p>
+          </div>
+          <!-- 상품목록 -->
+          <div class="goods-list swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼(추가된 상태) -->
+                  <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼(추가된 상태) -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide goods-item">
+                <div class="goods-img" style="background-image:url(https://dummyimage.com/205x207/f5f5f5/444444.png?text=Goods%20Image);">
+                  <!-- 관심상품 토글 버튼 -->
+                  <button class="btn-like" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                  <!-- //관심상품 토글 버튼 -->
+                </div>
+                <div class="goods-info">
+                  <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                  <div class="price">
+                    <div class="discount-rate"><strong>20</strong>%</div>
+                    <div class="calc-price"><strong>80,000</strong>원</div>
+                    <div class="origin-price"><strong>100,000</strong>원</div>
+                    <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <div class="swiper-button-prev"><i class="ic-32-arr-prev"></i></div>
+            <div class="swiper-button-next"><i class="ic-32-arr-next"></i></div>
+          </div>
+          <!-- //상품목록 -->
+        </div>
+        <!-- //할인상품 (CASE : 신상품/추천상품이 없는 경우) -->
+        <!-- 신상품/추천상품 (CASE : 할인상품이 없는 경우) -->
+        <div class="shop-zone new wide">
+          <div class="tabs">
+            <ul class="tab">
+              <li class="zone-title on"><a href="javascript:;" title="신상품">신상품</a></li>
+              <li class="zone-title"><a href="javascript:;" title="추천상품">추천상품</a></li>
+            </ul>
+            <div class="tab-content">
+              <!-- 상품목록 -->
+              <div class="goods-list">
+                <ul>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //상품목록 -->
+            </div>
+            <div class="tab-content" style="display:none;">
+              <!-- 상품목록 -->
+              <div class="goods-list">
+                <ul>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(추가된 상태) -->
+                      <button class="btn-like on" title="관심상품 해제"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(추가된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="goods-item">
+                    <div class="goods-img" style="background-image:url(https://dummyimage.com/1870x2540/f5f5f5/444444.png?text=Goods%20Image);">
+                      <!-- 관심상품 토글 버튼(해제된 상태) -->
+                      <button class="btn-like" title="관심상품 추가"><i class="ic-24-like"></i></button>
+                      <!-- //관심상품 토글 버튼(해제된 상태) -->
+                    </div>
+                    <div class="goods-info">
+                      <div class="title"><a href="">AS 코리아 나이키 브리드 2020 스타디움 홈 저지 S/S (CD0714653)</a></div>
+                      <div class="price">
+                        <div class="discount-rate"><strong>20</strong>%</div>
+                        <div class="calc-price"><strong>80,000</strong>원</div>
+                        <div class="origin-price"><strong>100,000</strong>원</div>
+                        <button class="btn-cart" title="장바구니 추가"><i class="ic-24-nega-cart"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //상품목록 -->
+            </div>
+          </div>
+        </div>
+        <!-- //신상품/추천상품 (CASE : 할인상품이 없는 경우) -->
+        <!-- 인기샵 -->
+        <div class="shop-zone popular-shop">
+          <div class="zone-title">
+            <h3>인기샵</h3>
+          </div>
+          <div class="shop-list swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+              <li class="swiper-slide"><a href=""><span class="shop-img" style="background-image:url(https://dummyimage.com/80x80/f5f5f5/444444.png?text=Shop%20Logo);"></span></a></li>
+            </ul>
+            <div class="swiper-button-prev"><i class="ic-24-arr-prev"></i></div>
+            <div class="swiper-button-next"><i class="ic-24-arr-next"></i></div>
+          </div>
+        </div>
+        <!-- //인기샵 -->
+      </div>
+      <!-- //content section (Shop) -->
+      <!-- content section (Play) -->
+      <div class="content-section play" id="play">
+        <div class="section-bg">
+          <img class="particle-01" src="../assets/images/main-pattern-03.svg" alt="">
+          <img class="particle-02" src="../assets/images/main-pattern-04.svg" alt="">
+        </div>
+        <div class="section-title lined">
+          <h2 class="font-point">Play</h2>
+          <p>현재 진행중인 Play를 확인해보세요!</p>
+        </div>
+        <!-- 경매 -->
+        <div class="play-zone auction">
+          <div class="zone-title">
+            <h3>경매</h3>
+            <div class="remaining">
+              <h4>입찰 남은 시간</h4>
+              <span class="flag">마감임박</span>
+              <div class="time">
+                07:12:12
+              </div>
+              <div class="date">
+                <dl>
+                  <dt>마감일자</dt>
+                  <dd>D-07</dd>
+                </dl>
+              </div>
+            </div>
+            <img class="auction-img" src="../assets/images/main-play-auction-01.svg" alt="" />
+          </div>
+          <div class="auction-info">
+            <div class="title">토트넘 싸인볼 5호 라이센스 (손흥민 케인 알리 모우라)</div>
+            <div class="price">
+              <dl class="start">
+                <dt>시작가</dt>
+                <dd><strong>14,000</strong>원</dd>
+              </dl>
+              <dl class="current">
+                <dt>현재가</dt>
+                <dd><strong>140,000</strong>원</dd>
+              </dl>
+            </div>
+            <button class="btn-join-auction font-point">참여하기</button>
+          </div>
+        </div>
+        <!-- //경매 -->
+        <!-- 이벤트 -->
+        <div class="play-zone event">
+          <div class="zone-title">
+            <h3>이벤트 <a class="btn-more" href=""><span>전체보기</span><i class="ic-24-more"></i></a></h3>
+          </div>
+          <div class="event-list swiper-container">
+            <div class="swiper-wrapper">
+              <div class="event-item swiper-slide">
+                <div class="event-info">
+                  <div class="title"><a href>10월 한달동안 월드컵 예선 티켓 구매시 손흥민 열쇠고리 증정!</a></div>
+                  <dl class="date">
+                    <dt>행사기간</dt>
+                    <dd>2021.10.01 ~ 2021.10.31</dd>
+                  </dl>
+                </div>
+                <div class="event-img" style="background-image:url(https://dummyimage.com/696x360/f5f5f5/444444.png?text=Event-Img);"><a href=""></a></div>
+              </div>
+              <div class="event-item swiper-slide">
+                <div class="event-info">
+                  <div class="title"><a href>10월 한달동안 월드컵 예선 티켓 구매시 손흥민 열쇠고리 증정231346546d4f6a!</a></div>
+                  <dl class="date">
+                    <dt>행사기간</dt>
+                    <dd>2021.10.01 ~ 2021.10.31</dd>
+                  </dl>
+                </div>
+                <div class="event-img" style="background-image:url(https://dummyimage.com/696x360/f5f5f5/444444.png?text=Event-Img);"><a href=""></a></div>
+              </div>
+              <div class="event-item swiper-slide">
+                <div class="event-info">
+                  <div class="title"><a href>10월 한달동안 월드컵 예선 티켓 구매시 손흥민 열쇠고리 증정23123123!</a></div>
+                  <dl class="date">
+                    <dt>행사기간</dt>
+                    <dd>2021.10.01 ~ 2021.10.31</dd>
+                  </dl>
+                </div>
+                <div class="event-img" style="background-image:url(https://dummyimage.com/696x360/f5f5f5/444444.png?text=Event-Img);"><a href=""></a></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-progress"><span class="progress"></span></div>
+          </div>
+        </div>
+        <!-- //이벤트 -->
+        <!-- 투표 -->
+        <div class="play-zone vote">
+          <div class="zone-title">
+            <h3>투표</h3>
+            <p>2022년 월드컵 예상 우승팀은 어느나라 일까요?</p>
+          </div>
+          <div class="vote-info">
+            <dl class="date">
+              <dt>행사기간</dt>
+              <dd>2021.10.01 ~ 2021.10.31</dd>
+            </dl>
+            <button class="btn-vote font-point">투표하기</button>
+          </div>
+        </div>
+        <!-- //투표 -->
+      </div>
+      <!-- //content section (Play) -->
+    </div>
+    <!-- //content -->
+    <!-- popup area -->
+    <!-- 메인 인스턴트 팝업 -->
+    <div class="popup popup-find-id absolute no-bg instant-popup" style="display:none;top:409px;left:228px;">
+      <div class="popup-wrapper">
+        <div class="popup-content">
+          <a href=""><img src='https://dummyimage.com/376x320/666666/000000.jpg?text=Popup%20Banner' alt='' /></a>
+        </div>
+        <div class="popup-footer">
+          <div class="top-banner-action">
+            <label for="chaekInstantBannerToggler"><input id="chaekInstantBannerToggler" name="chaekInstantBannerToggler" type="checkbox"><span>하루동안 보지않기</span></label>
+            <button class="btn-close" title="배너 닫기">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //메인 인스턴트 팝업 -->
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-logo"><img src="../assets/images/logo-web.svg" alt=""></div>
+        <div class="footer-info">
+          <dl>
+            <dt>회사명 : </dt>
+            <dd>대한축구협회</dd>
+          </dl>
+          <dl>
+            <dt>대표자명 : </dt>
+            <dd>정몽규</dd>
+          </dl>
+          <dl>
+            <dt>소재지 : </dt>
+            <dd>03175 서울특별시 종로구 경희궁길 46</dd>
+          </dl>
+          <dl>
+            <dt>대표번호 : </dt>
+            <dd>02-2002-0707</dd>
+          </dl>
+          <dl>
+            <dt>사업자등록번호 : </dt>
+            <dd>102-82-00068</dd>
+          </dl>
+          <dl>
+            <dt>통신판매업신고번호 : </dt>
+            <dd>제2011-서울강서-0430호</dd>
+          </dl>
+          <dl>
+            <dt>호스팅서비스제공자 : </dt>
+            <dd>정승준(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <dl>
+            <dt>개인정보보호책임자 : </dt>
+            <dd>정몽주(<a href="mailto:ssmin@mariannekate.com">ssmin@mariannekate.com</a>)</dd>
+          </dl>
+          <p class="copyright">Copyright © 2017 CompanyName. All Rights Reserved.</p>
+        </div>
+        <div class="contact">
+          <h3>고객센터</h3>
+          <a class="tel" href="tel:1566-5666">1566-5666</a>
+          <a class="email" href="mailto:admin@kfaplay.com">admin@kfaplay.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div class="family-sites">
+          <select name="" id="">
+            <option value="" selected disabled>Family Site Link</option>
+            <option value="">KFA Photo 사이트</option>
+            <option value="">Join KFA</option>
+            <option value="">KFA 미디어 채널</option>
+            <option value="">KFA 아카데미 사이트</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <button class="btn-top" title="화면 상단으로 스크롤 이동"><i class="ic-24-nega-front"></i></button>
+  </div>
+  <!-- //wrapper -->
+
+  <!-- script load -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-ui.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+  <script src="../assets/js/kfa_script.js"></script>
+</body>
+
+</html>

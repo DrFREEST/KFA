@@ -1,0 +1,14 @@
+/* Content */
+.content {
+  position: relative;
+  /* ========== [ Sub Content Start ] ========== */
+  &.login,
+  &.join,
+  &.sub {
+    &.sub,
+    &.join {
+      padding-bottom: 2.5rem;
+    }
+  }
+  /* ========== [ Sub Content End ] ========== */
+}

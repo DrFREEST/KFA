@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet" />
+  <link href="template.list.css" rel="stylesheet" />
+  <title>퍼블리싱 리스트</title>
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper" id="listBody">
+    <div class="header">
+      <h1>KFS PLAY 퍼블리싱 리스트</h1>
+    </div>
+    <div class="content" id="content">
+      <p class="guide_summary"></p>
+      <div class="note">
+        <h3>[참고사항]</h3>
+        <ul>
+          <li>
+            - 메뉴 구성 및 파일명은 변경 될 수 있으니 작업 시 확인 필요합니다.
+          </li>
+        </ul>
+      </div>
+      <div class="pub_summary"></div>
+      <div class="table-area">
+        <table class="guide_table" style="table-layout: auto;" summary="페이지명(디자인 파일명), 퍼블리싱 파일명, 완료여부, 비고 및 수정내역 목록">
+          <caption>
+            코딩 리스트
+          </caption>
+          <colgroup>
+            <col style="width: 50px;" />
+            <col style="width: auto;" />
+            <col style="width: auto;" />
+            <col style="width: auto;" />
+            <!-- <col style="width: auto;" />
+              <col style="width: auto;" />
+              <col style="width: auto;" /> -->
+            <col style="width: auto;" />
+            <col style="width: 100px;" />
+            <col style="width: auto;" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">구분</th>
+              <th scope="col">페이지명</th>
+              <th scope="col">depth3</th>
+              <!-- <th scope="col">depth4</th>
+              <th scope="col">depth5</th> -->
+              <!-- <th scope="col">페이지명(디자인 파일명)</th> -->
+              <th scope="col">퍼블리싱 파일명</th>
+              <th scope="col">진척율</th>
+              <!-- <th scope="col">디자인 링크</th> -->
+              <th scope="col">비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, index) in pageList" v-bind:todo="item" v-bind:key="item.id" :class="{'complete-ignore':item.complete=='네이티브','odd':item.class=='odd'}">
+              <td class="no">{{(index + 1)}}</td>
+              <td class="file">{{item.depth1}}</td>
+              <td class="file">{{item.depth2}}</td>
+              <td class="file">{{item.depth3}}</td>
+              <!-- <td class="file">{{item.depth4}}</td>
+              <td class="file">{{item.depth5}}</td> -->
+              <td class="file" v-if="item.fileHash==''">
+                <a :href="item.fileRoot + item.fileName+'.html'" v-text="item.fileName + '.html'"></a>
+                &nbsp;&nbsp;<a :href="item.fileRoot + item.fileName+'.html'" target="_blank">[새창]</a>
+              </td>
+              <td class="file" v-else>
+                <a :href="item.fileRoot + item.fileName+'.html#'+item.fileHash" v-text="item.fileName + '.html#'+item.fileHash"></a>
+                &nbsp;&nbsp;<a :href="item.fileRoot + item.fileName+'.html#'+item.fileHash" target="_blank">[새창]</a>
+              </td>
+              <td class="status" :class="{'complete':item.complete=='완료', 'complete-half':item.complete=='부분완료', 'complete-ignore':item.complete=='네이티브'}">
+                <!-- {{item.complete}} -->
+                <span class="value" v-html="(item.complete * 100) + '%'" :style="{width:(item.complete * 100) + '%'}" :data-complete-value="item.complete">{{}}%</span>
+              </td>
+              <!-- <td class="file">
+                <a :href="item.designLink" v-text="item.designLink" target="_blank"></a>
+              </td> -->
+              <td class="note"><span v-html="item.note"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="preview-area">
+        <!-- <p class="important">※ 미리보기 영역은 실제 화면에 보일 사이즈보다 작은 사이즈로 보임. 실제사이즈를 확인하려면 위 링크의 [새창] 부분을 클릭해서 확인 필요.</p> -->
+        <div class="iframe-wrapper mo">
+          <iframe id="previewMobile" class="preview-frame mobile" src="template/메인.html" frameborder="0"></iframe>
+        </div>
+        <div class="iframe-wrapper pc">
+          <iframe id="previewPc" class="preview-frame pc" src="template/메인.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="copyright">DALKONG &copy; All Right Reserved.</p>
+    </div>
+  </div>
+  <!-- //wrapper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <script src="template.list.js"></script>
+</body>
+
+</html>

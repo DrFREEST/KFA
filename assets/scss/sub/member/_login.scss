@@ -1,0 +1,109 @@
+&.login {
+  /* Login Start */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Login End */
+  .content-section {
+    display: inline-flex;
+    flex-direction: column;
+    // margin: 0 auto;
+    width: 100%;
+    max-width: 26.125rem;
+    padding: {
+      top: 6rem;
+      bottom: 6rem;
+    }
+    .section-title {
+      margin-bottom: 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid #000000;
+      font-size: 2.5rem;
+      line-height: calc(59 / 40);
+    }
+    & > p {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      // max-width: 26.125rem;
+      // max-width: 100%;
+    }
+    .login-menu {
+      margin-top: 1.5rem;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          padding: 0 1rem;
+          color: #666666;
+          font-size: 0.875rem;
+          line-height: 1;
+          & ~ li {
+            border-left: 1px solid #d8d8d8;
+          }
+          a {
+          }
+        }
+      }
+    }
+    .btns-group {
+      display: flex;
+      flex-wrap: wrap;
+      button {
+        margin: 0.5rem 0;
+        & ~ button {
+        }
+        &.btn-full {
+          flex: 1 1 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  &.login {
+    /* Login Start */
+    .content-section {
+      padding: {
+        top: 9.375rem;
+        bottom: 9.375rem;
+      }
+      .section-title {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #000000;
+        font-size: 1.5rem;
+        line-height: calc(24 / 36);
+      }
+      .login-form {
+      }
+      .login-menu {
+        margin-top: 1.5rem;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li {
+            padding: 0 1rem;
+            color: #666666;
+            font-size: 0.875rem;
+            line-height: 1;
+            & ~ li {
+              border-left: 1px solid #d8d8d8;
+            }
+            a {
+            }
+          }
+        }
+      }
+    }
+    /* Login End */
+  }
+}
