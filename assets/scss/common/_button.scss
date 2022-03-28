@@ -22,6 +22,12 @@ button {
       background-color: $color-red;
     }
   }
+  &.btn-white {
+    &::before {
+      border: 1px solid #d8d8d8;
+      background-color: #ffffff;
+    }
+  }
   &.btn-dark-blue {
     &::before {
       background-color: $color-dark-blue;

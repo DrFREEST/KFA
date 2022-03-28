@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="csvz9yql9c">
+            <stop stop-color="#FE2C93" offset="0%"/>
+            <stop stop-color="#A31B5E" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="1f5j1q9p1d">
+            <stop stop-color="#6EA2FF" offset="0%"/>
+            <stop stop-color="#6FC9FF" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="100%" y1="18.149%" x2="0%" y2="81.851%" id="n3r4e0g0ne">
+            <stop stop-color="#FF666A" offset="0%"/>
+            <stop stop-color="#FFA06D" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="100%" y1="46.163%" x2="0%" y2="53.837%" id="2hlt4njigf">
+            <stop stop-color="#388AF5" offset="0%"/>
+            <stop stop-color="#76E1FF" offset="100%"/>
+        </linearGradient>
+        <path d="M20.955 9.709 5.039 46.982s-.568 1.818.526 2.568c.672.483 1.425.658 3.039.118 1.198-.441 13.343-5.525 36.433-15.252L20.955 9.71z" id="i0fdehpz1a"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h64v64H0z"/>
+        <g transform="translate(2 7)">
+            <mask id="6yym03iypb" fill="#fff">
+                <use xlink:href="#i0fdehpz1a"/>
+            </mask>
+            <use fill="#EA3C92" xlink:href="#i0fdehpz1a"/>
+            <path d="M16.731 18.555c4.037 10.65 10.993 17.067 21.043 19.482l.48.112-1.099 4.877C25.341 40.363 16.984 32.9 12.262 20.862l-.206-.534 4.675-1.773zM9.246 28.374c2.801 9.392 8.183 14.8 16.343 16.552l.41.084-.97 4.906C14.894 47.912 8.02 41.265 4.609 30.305l-.153-.502 4.791-1.429z" fill="#3C9DEA" fill-rule="nonzero" mask="url(#6yym03iypb)"/>
+            <ellipse fill="url(#csvz9yql9c)" transform="rotate(45 33.753 21.438)" cx="33.753" cy="21.438" rx="17.507" ry="5.782"/>
+            <path stroke="url(#1f5j1q9p1d)" stroke-width="2.8" d="m27.929 17.064 4.777-5.014-2.686-5.856L34.91 0"/>
+            <path d="m34.008 22.724.902-2.966c.753-2.326 2.542-3.54 5.366-3.641.601 0 3.728-.319 4.4-3.952.058-.313.674-5.188 7.32-3.406" stroke="url(#n3r4e0g0ne)" stroke-width="2.8"/>
+            <circle fill="#11368F" cx="39.992" cy="8.575" r="1.75"/>
+            <circle fill="#FF1A00" cx="57.807" cy="16.083" r="2"/>
+            <ellipse fill="#FFB653" cx="3.193" cy="28.491" rx="3.193" ry="3.226"/>
+            <ellipse fill="#3C9DEA" cx="44.515" cy="40.588" rx="2.395" ry="2.419"/>
+            <path stroke="url(#2hlt4njigf)" stroke-width="2.8" d="m38.112 26.984 13.883-3.846"/>
+        </g>
+    </g>
+</svg>

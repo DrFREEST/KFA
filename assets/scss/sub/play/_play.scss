@@ -1,6 +1,532 @@
 &.play {
+  &.shop {
+    padding-bottom: 7.5rem;
+    @media (max-width: 1024px) {
+      padding-bottom: 3.75rem;
+    }
+  }
+  .content-section {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  /* ====================[[ 이벤트 상세 ]]==================== */
+  .event-detail,
+  .vote-detail {
+    .event-top-visual {
+      position: relative;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: stretch;
+      .visual-title {
+        z-index: 1;
+        width: 50%;
+        // position: absolute;
+        left: 0;
+        top: 0;
+        background: {
+          color: #cedbe6;
+        }
+        padding: 2.5rem;
+        font-size: 1.75rem;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+      .visual-img {
+        width: 50%;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          width: 46%;
+          // transform: translateX(100%);
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          background-image: linear-gradient(-270deg, #cedbe6 3%, #cfdbe6 3%, rgba(206, 219, 230, 0) 46%);
+        }
+      }
+      img {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: right center;
+      }
+      @media (max-width: 1024px) {
+        margin: {
+          left: -1rem;
+          right: -1rem;
+          bottom: 0.5rem;
+        }
+        flex-wrap: wrap;
+        .visual-title {
+          position: relative;
+          flex: 1 1 auto;
+          width: 100%;
+          min-height: 8rem;
+          padding: 1rem;
+          font-size: 1.125rem;
+        }
+        .visual-img {
+          flex: 1 1 auto;
+          width: 100%;
+          height: 8rem;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          align-items: center;
+        }
+        img {
+          object-fit: cover;
+          width: inherit;
+          height: fit-content;
+          min-width: 100%;
+          min-height: 8rem;
+          object-position: center center;
+          // min-height: 8rem;
+        }
+      }
+    }
+    .vote-top-visual {
+      padding: 2.5rem;
+      background: {
+        color: #001a58;
+      }
+      min-height: 15rem;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1024px) {
+        padding: 1rem;
+        margin: {
+          left: -1rem;
+          right: -1rem;
+        }
+        min-height: 8rem;
+      }
+      .visual-title {
+        font-size: 1.75rem;
+        flex: 1 1 auto;
+        font-weight: normal;
+        @media (max-width: 1024px) {
+          font-size: 1.125rem;
+        }
+      }
+      .date-range {
+        color: #ffffff;
+        flex: 0 0 auto;
+        font-size: 1rem;
+        @media (max-width: 1024px) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .event-btns-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      button {
+        & ~ button {
+          margin-left: -0.5rem;
+        }
+      }
+      .btn-share {
+        width: 6.75rem;
+        padding: 0;
+        .ic-24-share {
+          width: 1.5rem;
+          height: 1.5rem;
+          background: {
+            image: url(../images/icon/ic-24-share.svg);
+          }
+        }
+        @media (max-width: 1024px) {
+          width: 4.5rem;
+        }
+      }
+      .btn-dark-blue {
+        width: 9.625rem;
+        span {
+        }
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+    .event-content {
+      line-height: 2;
+      h4 {
+      }
+      p {
+        br {
+        }
+      }
+    }
+  }
+  .event-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1.125rem 5rem;
+    margin-bottom: 1rem;
+    .result-icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(calc(-100% - 1rem), -50%);
+      left: 0;
+      width: 4rem;
+      height: 4rem;
+      background: {
+        image: url(../images/ic-congrats.svg);
+      }
+      @media (max-width: 1024px) {
+        position: relative;
+      }
+    }
+    .result-text {
+      position: relative;
+      text-align: center;
+      strong {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #11368f;
+      }
+      span {
+        color: #666666;
+        font-size: 1rem;
+        display: block;
+      }
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 0.5rem;
+      .result-icon {
+        position: relative;
+        transform: translate(0, 0);
+        margin: {
+          top: 0;
+          bottom: 0.5rem;
+          left: auto;
+          right: auto;
+        }
+      }
+      .result-text {
+        strong {
+          font-size: 1rem;
+        }
+        span {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+  /* ====================[[ 이벤트 주문결제 ]]==================== */
+  .oeder-detail-top {
+    background: {
+      color: #f6f6f6;
+    }
+    margin-bottom: 2.5rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    .order-time {
+      color: #666666;
+      font-size: 0.875rem;
+      flex: 0 0 auto;
+      padding-right: 2rem;
+    }
+    .order-number {
+      flex: 1 1 auto;
+      dl {
+        display: flex;
+        font-size: 0.875rem;
+        dt {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      height: auto;
+      margin-bottom: 1rem;
+      .order-time {
+        order: 1;
+      }
+      .order-number {
+        order: 0;
+      }
+    }
+  }
+  .cart-list {
+    & + h3 {
+      margin-top: 2.5rem;
+    }
+    .list-group {
+      .list-item {
+        .price {
+          flex: 1 1 auto;
+          margin-left: calc(4.5rem + 1rem);
+          text-align: left;
+          padding: {
+            left: 0;
+            top: 0.5rem;
+            bottom: 0.5rem;
+          }
+          border-top: 1px solid #f6f6f6;
+          strong {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+    .seller-total {
+      font-size: 0.875rem;
+      padding: {
+        top: 0.5rem;
+        bottom: 0.5rem;
+      }
+      h3 {
+        flex: 0 0 auto;
+        padding-right: 0.5rem;
+      }
+      .tel {
+        font-size: 0.875rem;
+        color: #666666;
+      }
+      @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 0.75rem;
+          margin-bottom: 0;
+          flex: 1 1 auto;
+        }
+        .tel {
+          flex: 0 0 auto;
+          font-size: 0.75rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .order-list {
+    .order-item {
+      @media (max-width: 1280px) {
+        .seller-info {
+          border: {
+            top: 1px solid #d8d8d8;
+            bottom: 1px solid #d8d8d8;
+          }
+        }
+        .item-content {
+          .goods-info {
+            // align-items: flex-start !important;
+            padding-bottom: 0 !important;
+          }
+          .price {
+            margin-top: 0 !important;
+            margin-left: calc(4.5rem + 1rem) !important;
+            padding: {
+              left: 0 !important;
+            }
+            text-align: left !important;
+            justify-content: flex-start !important;
+            border-top: 1px solid #f6f6f6;
+          }
+        }
+      }
+    }
+  }
+  .form-field {
+    .input-row {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @media (max-width: 1024px) {
+        &.nowrap {
+          flex-wrap: nowrap;
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+          .input-title {
+            flex: 0 0 6.5rem !important;
+            max-width: 6.5rem;
+            padding: 0;
+            margin: 0 !important;
+          }
+          .input-group {
+            flex: 1 1 auto;
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+  /* ====================[[ 투표 상세 ]]==================== */
+  .vote-content {
+    .content-text {
+      padding: 4.25rem 0;
+      text-align: center;
+      font-size: 1.25rem;
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+        padding: {
+          top: 1.5rem;
+          bottom: 1.5rem;
+        }
+      }
+    }
+    .vote-items {
+      margin-bottom: 4.25rem;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        li {
+          flex: 0 1 12.5rem;
+          min-height: 17.5rem;
+          margin: 0 1.5rem;
+          border-radius: 0.3125rem;
+          box-shadow: 0.3125rem 0.3125rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+          border: solid 1px #d8d8d8;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 3rem 1rem;
+          @media (max-width: 1024px) {
+            margin: 0 0.25rem;
+            min-height: 10rem;
+          }
+          & > div {
+            position: relative;
+            &.my-choice {
+              em {
+                display: block;
+              }
+            }
+          }
+        }
+        .rank {
+          color: #666666;
+          font-size: 1rem;
+        }
+        .value {
+          font-size: 1.25rem;
+        }
+        .input-radio {
+          label {
+            position: relative;
+            display: block;
+            input[type='radio'] {
+              display: block;
+              margin: 0 auto;
+              margin-bottom: 1rem;
+              @media (max-width: 1024px) {
+                margin-bottom: 0.25rem;
+              }
+              &:checked {
+                & ~ em {
+                  display: block;
+                }
+              }
+            }
+            span {
+              font-size: 1.25rem;
+              display: block;
+              margin: 0;
+              @media (max-width: 1024px) {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        em {
+          width: 100%;
+          margin-top: 0.25rem;
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          transform: translateX(-50%);
+          display: block;
+          color: #11368f;
+          text-decoration: none;
+          font-style: normal;
+          font-size: 0.875rem;
+          display: none;
+        }
+      }
+      &.media {
+        ul {
+          li {
+            justify-content: flex-start;
+            padding: {
+              top: 1rem;
+              left: 1rem;
+              right: 1rem;
+              bottom: 3rem;
+            }
+            @media (max-width: 1024px) {
+              padding: {
+                top: 0.5rem;
+                left: 0.5rem;
+                right: 0.5rem;
+                bottom: 2rem;
+              }
+            }
+            .media {
+              margin-bottom: 2.5rem;
+              width: 100%;
+              padding: {
+                top: calc(100% * 120 / 168);
+              }
+              overflow: hidden;
+              @media (max-width: 1024px) {
+                margin-bottom: 1rem;
+              }
+              img,
+              iframe {
+                max-width: 100%;
+                display: block;
+                position: absolute;
+                max-width: -webkit-fill-available;
+                width: -webkit-fill-available;
+                height: -webkit-fill-available;
+                top: 0;
+                left: 0;
+                object-position: center;
+                object-fit: cover;
+              }
+            }
+            .input-radio {
+              flex: 1 1 auto;
+            }
+          }
+        }
+      }
+    }
+    & + .event-btns-group {
+      button:disabled {
+        color: #7a8ec1;
+      }
+    }
+  }
 }
 @media (max-width: 1024px) {
-  &.play {
-  }
 }

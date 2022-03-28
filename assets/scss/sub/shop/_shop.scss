@@ -3,9 +3,77 @@
     max-width: calc(50% - 4rem);
     margin: 0 2rem;
     flex: 0 1 50%;
-    .shop-name {
+    &.auction-info {
+      .info-table {
+        border-bottom: 1px solid #d8d8d8;
+        & + .btns-group {
+          margin-top: 2.5rem;
+        }
+      }
+      .bidding-status {
+        color: #333333;
+        width: 100%;
+        min-height: 15rem;
+        padding: 0;
+        align-items: flex-start;
+        dt {
+          min-height: 3rem;
+          display: flex;
+          align-items: center;
+        }
+        &.no-bidding {
+          dd {
+            color: #333333;
+            line-height: 3rem;
+          }
+        }
+        dd {
+          flex: 1 1 auto;
+        }
+        .count {
+          display: flex;
+          align-items: center;
+          height: 3rem;
+          border-bottom: 1px solid #d8d8d8;
+          color: #000000;
+        }
+        ul {
+          color: #000000;
+          max-height: calc(3rem * 5 - 1px);
+          overflow-y: auto;
+          & > li {
+            display: flex;
+            height: 3rem;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #d8d8d8;
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+      .event-result {
+        margin-bottom: 0;
+        & + .btns-group {
+        }
+      }
+      .btns-group {
+        button {
+          flex: 1;
+          & ~ button {
+            margin-left: -0.25rem;
+          }
+        }
+      }
+    }
+    .shop-name,
+    .remaining-time {
       margin-bottom: 0.75rem;
       color: #666666;
+      &.ended {
+        color: #333333;
+      }
       a {
       }
     }
@@ -19,6 +87,70 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      &.auction {
+        display: block;
+        dl {
+          display: flex;
+          align-items: center;
+          dt {
+            font-weight: normal;
+            padding-right: 0.625rem;
+            font-size: 14px;
+            color: #666666;
+          }
+          dd {
+          }
+        }
+        .start {
+          color: #999999;
+          @media (max-width: 1024px) {
+            font-size: 0.875rem;
+          }
+          strong {
+            font-size: 1.25rem;
+            font-weight: normal;
+            @media (max-width: 1024px) {
+              font-size: 1rem;
+            }
+          }
+        }
+        .bid {
+          font-size: 1rem;
+          @media (max-width: 1024px) {
+            font-size: 0.875rem;
+          }
+        }
+        .current {
+          margin-top: 0.625rem;
+          &.winning {
+            color: #e6002d;
+            dt {
+              color: #e6002d;
+            }
+            dd {
+              .user {
+                color: #000000;
+                font-size: 0.875rem;
+              }
+            }
+          }
+          @media (max-width: 1024px) {
+            margin-top: 0;
+          }
+          dl {
+            dt {
+            }
+            dd {
+              font-size: 1.25rem;
+              font-weight: 500;
+              strong {
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
       .origin {
         text-decoration: line-through;
         color: #999999;
@@ -160,6 +292,10 @@
     .btns-group {
       display: flex;
       align-items: center;
+      @media (max-width: 1024px) {
+        position: sticky;
+        bottom: 0;
+      }
       button {
         height: 3.5rem;
         &.wide {
